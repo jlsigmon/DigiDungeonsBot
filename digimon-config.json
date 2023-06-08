@@ -1,0 +1,24 @@
+{
+    "digimonList": [
+        {
+            "name": "Agumon",
+            "base-hp": 40,
+            "base-mp": 20,
+            "base-atk": 10,
+            "base-def": 5,
+            "base-spirit": 5,
+            "base-speed": 6,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }
+            ]
+        }
+    ]
+}

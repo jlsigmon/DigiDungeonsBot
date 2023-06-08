@@ -1,0 +1,9 @@
+{
+    "token": "value",
+    "clientId": "value",
+    "guildId": "value",
+    "dbHost": "value",
+    "dbUserName": "value",
+    "dbPassword": "value",
+    "dbName": "digidungeon"
+}
