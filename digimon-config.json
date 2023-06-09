@@ -17,7 +17,2458 @@
                     "damage": "",
                     "cost": "",
                     "unlock-level": ""
-                }
+                                }] 
+            },
+        {
+            "name": "Gabumon",
+            "base-hp": 50,
+            "base-mp": 20,
+            "base-atk": 6,
+            "base-def": 10,
+            "base-spirit": 5,
+            "base-speed": 4,
+            "base-recovery": 8,
+            "evolution-rank": "Rookie",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },		
+        {
+            "name": "Palmon",
+            "base-hp": 40,
+            "base-mp": 20,
+            "base-atk": 5,
+            "base-def": 6,
+            "base-spirit": 5,
+            "base-speed": 5,
+            "base-recovery": 15,
+            "evolution-rank": "Rookie",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Tentomon",
+            "base-hp": 30,
+            "base-mp": 20,
+            "base-atk": 5,
+            "base-def": 4,
+            "base-spirit": 5,
+            "base-speed": 8,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Biyomon",
+            "base-hp": 30,
+            "base-mp": 20,
+            "base-atk": 5,
+            "base-def": 4,
+            "base-spirit": 5,
+            "base-speed": 8,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Veemon",
+            "base-hp": 40,
+            "base-mp": 20,
+            "base-atk": 15,
+            "base-def": 5,
+            "base-spirit": 5,
+            "base-speed": 10,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Wormmon",
+            "base-hp": 30,
+            "base-mp": 20,
+            "base-atk": 5,
+            "base-def": 5,
+            "base-spirit": 10,
+            "base-speed": 5,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Patamon",
+            "base-hp": 30,
+            "base-mp": 25,
+            "base-atk": 5,
+            "base-def": 5,
+            "base-spirit": 20,
+            "base-speed": 10,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Salamon",
+            "base-hp": 30,
+            "base-mp": 25,
+            "base-atk": 5,
+            "base-def": 5,
+            "base-spirit": 20,
+            "base-speed": 5,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Armadillomon",
+            "base-hp": 50,
+            "base-mp": 20,
+            "base-atk": 5,
+            "base-def": 15,
+            "base-spirit": 5,
+            "base-speed": 3,
+            "base-recovery": 15,
+            "evolution-rank": "Rookie",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Guilmon",
+            "base-hp": 50,
+            "base-mp": 20,
+            "base-atk": 10,
+            "base-def": 10,
+            "base-spirit": 5,
+            "base-speed": 5,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Renamon",
+            "base-hp": 30,
+            "base-mp": 20,
+            "base-atk": 5,
+            "base-def": 5,
+            "base-spirit": 10,
+            "base-speed": 12,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Terriermon",
+            "base-hp": 30,
+            "base-mp": 20,
+            "base-atk": 6,
+            "base-def": 5,
+            "base-spirit": 10,
+            "base-speed": 10,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Impmon",
+            "base-hp": 30,
+            "base-mp": 20,
+            "base-atk": 8,
+            "base-def": 5,
+            "base-spirit": 5,
+            "base-speed": 8,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Gaomon",
+            "base-hp": 40,
+            "base-mp": 20,
+            "base-atk": 10,
+            "base-def": 8,
+            "base-spirit": 5,
+            "base-speed": 6,
+            "base-recovery": 10,
+            "evolution-rank": "Rookie",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Angemon",
+            "base-hp": 70,
+            "base-mp": 60,
+            "base-atk": 50,
+            "base-def": 30,
+            "base-spirit": 40,
+            "base-speed": 40,
+            "base-recovery": 30,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Ankylomon",
+            "base-hp": 80,
+            "base-mp": 40,
+            "base-atk": 60,
+            "base-def": 60,
+            "base-spirit": 20,
+            "base-speed": 20,
+            "base-recovery": 30,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Aquilamon",
+            "base-hp": 70,
+            "base-mp": 60,
+            "base-atk": 60,
+            "base-def": 50,
+            "base-spirit": 20,
+            "base-speed": 30,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Birdramon",
+            "base-hp": 60,
+            "base-mp": 50,
+            "base-atk": 50,
+            "base-def": 40,
+            "base-spirit": 20,
+            "base-speed": 35,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "BlackGatomon",
+            "base-hp": 60,
+            "base-mp": 50,
+            "base-atk": 40,
+            "base-def": 40,
+            "base-spirit": 30,
+            "base-speed": 30,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Cyclonemon",
+            "base-hp": 80,
+            "base-mp": 45,
+            "base-atk": 60,
+            "base-def": 60,
+            "base-spirit": 10,
+            "base-speed": 25,
+            "base-recovery": 15,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "ExVeemon",
+            "base-hp": 60,
+            "base-mp": 40,
+            "base-atk": 70,
+            "base-def": 40,
+            "base-spirit": 30,
+            "base-speed": 60,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Frigimon",
+            "base-hp": 100,
+            "base-mp": 40,
+            "base-atk": 50,
+            "base-def": 60,
+            "base-spirit": 40,
+            "base-speed": 20,
+            "base-recovery": 30,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Gaogamon",
+            "base-hp": 70,
+            "base-mp": 50,
+            "base-atk": 70,
+            "base-def": 45,
+            "base-spirit": 45,
+            "base-speed": 60,
+            "base-recovery": 35,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Gargomon",
+            "base-hp": 90,
+            "base-mp": 40,
+            "base-atk": 65,
+            "base-def": 50,
+            "base-spirit": 40,
+            "base-speed": 40,
+            "base-recovery": 40,
+            "evolution-rank": "Champion",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Garurumon",
+            "base-hp": 60,
+            "base-mp": 50,
+            "base-atk": 70,
+            "base-def": 60,
+            "base-spirit": 20,
+            "base-speed": 25,
+            "base-recovery": 8,
+            "evolution-rank": "Champion",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "GeoGreymon",
+            "base-hp": 70,
+            "base-mp": 60,
+            "base-atk": 70,
+            "base-def": 40,
+            "base-spirit": 20,
+            "base-speed": 40,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Gatomon",
+            "base-hp": 60,
+            "base-mp": 50,
+            "base-atk": 40,
+            "base-def": 40,
+            "base-spirit": 30,
+            "base-speed": 30,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },            
+        {
+            "name": "Growlmon",
+            "base-hp": 80,
+            "base-mp": 40,
+            "base-atk": 60,
+            "base-def": 50,
+            "base-spirit": 25,
+            "base-speed": 25,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "IceDevimon",
+            "base-hp": 65,
+            "base-mp": 50,
+            "base-atk": 45,
+            "base-def": 50,
+            "base-spirit": 30,
+            "base-speed": 40,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Kabuterimon",
+            "base-hp": 70,
+            "base-mp": 50,
+            "base-atk": 50,
+            "base-def": 40,
+            "base-spirit": 30,
+            "base-speed": 35,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Kuwagumon",
+            "base-hp": 70,
+            "base-mp": 45,
+            "base-atk": 70,
+            "base-def": 40,
+            "base-spirit": 30,
+            "base-speed": 40,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Kyubimon",
+            "base-hp": 70,
+            "base-mp": 70,
+            "base-atk": 50,
+            "base-def": 40,
+            "base-spirit": 30,
+            "base-speed": 50,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Lekismon",
+            "base-hp": 65,
+            "base-mp": 40,
+            "base-atk": 45,
+            "base-def": 30,
+            "base-spirit": 35,
+            "base-speed": 30,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Lobomon",
+            "base-hp": 70,
+            "base-mp": 50,
+            "base-atk": 70,
+            "base-def": 50,
+            "base-spirit": 30,
+            "base-speed": 35,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Reppamon",
+            "base-hp": 70,
+            "base-mp": 50,
+            "base-atk": 55,
+            "base-def": 35,
+            "base-spirit": 30,
+            "base-speed": 40,
+            "base-recovery": 30,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Sorcerimon",
+            "base-hp": 50,
+            "base-mp": 60,
+            "base-atk": 70,
+            "base-def": 40,
+            "base-spirit": 60,
+            "base-speed": 40,
+            "base-recovery": 35,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Stingmon",
+            "base-hp": 60,
+            "base-mp": 50,
+            "base-atk": 65,
+            "base-def": 40,
+            "base-spirit": 20,
+            "base-speed": 35,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Strikedramon",
+            "base-hp": 30,
+            "base-mp": 20,
+            "base-atk": 5,
+            "base-def": 4,
+            "base-spirit": 5,
+            "base-speed": 5,
+            "base-recovery": 8,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Tankmon",
+            "base-hp": 90,
+            "base-mp": 40,
+            "base-atk": 60,
+            "base-def": 60,
+            "base-spirit": 20,
+            "base-speed": 15,
+            "base-recovery": 15,
+            "evolution-rank": "Champion",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Togemon",
+            "base-hp": 90,
+            "base-mp": 50,
+            "base-atk": 60,
+            "base-def": 60,
+            "base-spirit": 60,
+            "base-speed": 25,
+            "base-recovery": 30,
+            "evolution-rank": "Champion",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Tyranomon",
+            "base-hp": 80,
+            "base-mp": 50,
+            "base-atk": 60,
+            "base-def": 70,
+            "base-spirit": 30,
+            "base-speed": 20,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Veedramon",
+            "base-hp": 80,
+            "base-mp": 50,
+            "base-atk": 40,
+            "base-def": 60,
+            "base-spirit": 50,
+            "base-speed": 45,
+            "base-recovery": 35,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Waspmon",
+            "base-hp": 60,
+            "base-mp": 40,
+            "base-atk": 50,
+            "base-def": 40,
+            "base-spirit": 20,
+            "base-speed": 35,
+            "base-recovery": 25,
+            "evolution-rank": "Champion",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Wizardmon",
+            "base-hp": 50,
+            "base-mp": 60,
+            "base-atk": 60,
+            "base-def": 50,
+            "base-spirit": 50,
+            "base-speed": 50,
+            "base-recovery": 30,
+            "evolution-rank": "Champion",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Woodmon",
+            "base-hp": 80,
+            "base-mp": 60,
+            "base-atk": 30,
+            "base-def": 70,
+            "base-spirit": 45,
+            "base-speed": 20,
+            "base-recovery": 20,
+            "evolution-rank": "Champion",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "AeroVeedramon",
+            "base-hp": 280,
+            "base-mp": 90,
+            "base-atk": 80,
+            "base-def": 70,
+            "base-spirit": 60,
+            "base-speed": 90,
+            "base-recovery": 70,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Angewomon",
+            "base-hp": 260,
+            "base-mp": 130,
+            "base-atk": 90,
+            "base-def": 80,
+            "base-spirit": 120,
+            "base-speed": 75,
+            "base-recovery": 30,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Antylamon",
+            "base-hp": 220,
+            "base-mp": 110,
+            "base-atk": 60,
+            "base-def": 70,
+            "base-spirit": 100,
+            "base-speed": 40,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Cannonbeemon",
+            "base-hp": 260,
+            "base-mp": 85,
+            "base-atk": 80,
+            "base-def": 100,
+            "base-spirit": 40,
+            "base-speed": 40,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Cherrymon",
+            "base-hp": 280,
+            "base-mp": 110,
+            "base-atk": 60,
+            "base-def": 110,
+            "base-spirit": 80,
+            "base-speed": 30,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Chirinmon",
+            "base-hp": 210,
+            "base-mp": 90,
+            "base-atk": 70,
+            "base-def": 80,
+            "base-spirit": 80,
+            "base-speed": 80,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Crescemon",
+            "base-hp": 220,
+            "base-mp": 100,
+            "base-atk": 100,
+            "base-def": 60,
+            "base-spirit": 50,
+            "base-speed": 70,
+            "base-recovery": 70,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Crowmon",
+            "base-hp": 210,
+            "base-mp": 90,
+            "base-atk": 70,
+            "base-def": 50,
+            "base-spirit": 60,
+            "base-speed": 70,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Dinobeemon",
+            "base-hp": 250,
+            "base-mp": 70,
+            "base-atk": 75,
+            "base-def": 80,
+            "base-spirit": 40,
+            "base-speed": 30,
+            "base-recovery": 70,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Dorugreymon",
+            "base-hp": 270,
+            "base-mp": 75,
+            "base-atk": 100,
+            "base-def": 60,
+            "base-spirit": 75,
+            "base-speed": 80,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Garudamon",
+            "base-hp": 310,
+            "base-mp": 100,
+            "base-atk": 90,
+            "base-def": 60,
+            "base-spirit": 80,
+            "base-speed": 90,
+            "base-recovery": 70,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Grademon",
+            "base-hp": 240,
+            "base-mp": 80,
+            "base-atk": 120,
+            "base-def": 70,
+            "base-spirit": 40,
+            "base-speed": 50,
+            "base-recovery": 40,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "GrapLeomon",
+            "base-hp": 250,
+            "base-mp": 70,
+            "base-atk": 90,
+            "base-def": 75,
+            "base-spirit": 50,
+            "base-speed": 80,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Groundramon",
+            "base-hp": 300,
+            "base-mp": 80,
+            "base-atk": 90,
+            "base-def": 90,
+            "base-spirit": 40,
+            "base-speed": 40,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Knightmon",
+            "base-hp": 260,
+            "base-mp": 110,
+            "base-atk": 110,
+            "base-def": 100,
+            "base-spirit": 40,
+            "base-speed": 40,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "LadyDevimon",
+            "base-hp": 210,
+            "base-mp": 120,
+            "base-atk": 80,
+            "base-def": 80,
+            "base-spirit": 80,
+            "base-speed": 70,
+            "base-recovery": 40,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Lillymon",
+            "base-hp": 210,
+            "base-mp": 130,
+            "base-atk": 75,
+            "base-def": 90,
+            "base-spirit": 100,
+            "base-speed": 80,
+            "base-recovery": 40,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "MachGaogamon",
+            "base-hp": 250,
+            "base-mp": 70,
+            "base-atk": 80,
+            "base-def": 120,
+            "base-spirit": 30,
+            "base-speed": 70,
+            "base-recovery": 40,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "MagnaAngemon",
+            "base-hp": 300,
+            "base-mp": 100,
+            "base-atk": 80,
+            "base-def": 90,
+            "base-spirit": 90,
+            "base-speed": 60,
+            "base-recovery": 70,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Megadramon",
+            "base-hp": 230,
+            "base-mp": 100,
+            "base-atk": 130,
+            "base-def": 150,
+            "base-spirit": 15,
+            "base-speed": 40,
+            "base-recovery": 35,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "MegaKabuterimon",
+            "base-hp": 300,
+            "base-mp": 90,
+            "base-atk": 90,
+            "base-def": 120,
+            "base-spirit": 40,
+            "base-speed": 40,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "MetalGreymon",
+            "base-hp": 270,
+            "base-mp": 100,
+            "base-atk": 140,
+            "base-def": 120,
+            "base-spirit": 50,
+            "base-speed": 45,
+            "base-recovery": 20,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Monzaemon",
+            "base-hp": 300,
+            "base-mp": 100,
+            "base-atk": 70,
+            "base-def": 100,
+            "base-spirit": 70,
+            "base-speed": 30,
+            "base-recovery": 45,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Myotismon",
+            "base-hp": 270,
+            "base-mp": 100,
+            "base-atk": 90,
+            "base-def": 80,
+            "base-spirit": 80,
+            "base-speed": 60,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Okuwamon",
+            "base-hp": 300,
+            "base-mp": 80,
+            "base-atk": 115,
+            "base-def": 150,
+            "base-spirit": 40,
+            "base-speed": 50,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Paildramon",
+            "base-hp": 270,
+            "base-mp": 110,
+            "base-atk": 90,
+            "base-def": 90,
+            "base-spirit": 70,
+            "base-speed": 50,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Rapidmon",
+            "base-hp": 230,
+            "base-mp": 85,
+            "base-atk": 120,
+            "base-def": 60,
+            "base-spirit": 60,
+            "base-speed": 90,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "RizeGreymon",
+            "base-hp": 230,
+            "base-mp": 90,
+            "base-atk": 160,
+            "base-def": 100,
+            "base-spirit": 30,
+            "base-speed": 60,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Shakkoumon",
+            "base-hp": 300,
+            "base-mp": 90,
+            "base-atk": 60,
+            "base-def": 75,
+            "base-spirit": 75,
+            "base-speed": 60,
+            "base-recovery": 70,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Silphymon",
+            "base-hp": 220,
+            "base-mp": 100,
+            "base-atk": 80,
+            "base-def": 50,
+            "base-spirit": 60,
+            "base-speed": 60,
+            "base-recovery": 40,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "SkullMeramon",
+            "base-hp": 240,
+            "base-mp": 80,
+            "base-atk": 100,
+            "base-def": 80,
+            "base-spirit": 80,
+            "base-speed": 50,
+            "base-recovery": 70,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Taomon",
+            "base-hp": 210,
+            "base-mp": 140,
+            "base-atk": 70,
+            "base-def": 80,
+            "base-spirit": 80,
+            "base-speed": 30,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "WarGrowlmon",
+            "base-hp": 250,
+            "base-mp": 80,
+            "base-atk": 110,
+            "base-def": 110,
+            "base-spirit": 10,
+            "base-speed": 25,
+            "base-recovery": 60,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "WereGarurumon",
+            "base-hp": 250,
+            "base-mp": 90,
+            "base-atk": 160,
+            "base-def": 70,
+            "base-spirit": 60,
+            "base-speed": 60,
+            "base-recovery": 40,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Wisemon",
+            "base-hp": 210,
+            "base-mp": 100,
+            "base-atk": 80,
+            "base-def": 80,
+            "base-spirit": 120,
+            "base-speed": 70,
+            "base-recovery": 50,
+            "evolution-rank": "Ultimate",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Zudomon",
+            "base-hp": 300,
+            "base-mp": 100,
+            "base-atk": 70,
+            "base-def": 100,
+            "base-spirit": 70,
+            "base-speed": 30,
+            "base-recovery": 45,
+            "evolution-rank": "Ultimate",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "BanchoLeomon",
+            "base-hp": 660,
+            "base-mp": 150,
+            "base-atk": 160,
+            "base-def": 200,
+            "base-spirit": 80,
+            "base-speed": 90,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Beelzemon",
+            "base-hp": 600,
+            "base-mp": 200,
+            "base-atk": 200,
+            "base-def": 100,
+            "base-spirit": 50,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Boltmon",
+            "base-hp": 750,
+            "base-mp": 120,
+            "base-atk": 130,
+            "base-def": 140,
+            "base-spirit": 60,
+            "base-speed": 80,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Breakdramon",
+            "base-hp": 800,
+            "base-mp": 120,
+            "base-atk": 120,
+            "base-def": 200,
+            "base-spirit": 50,
+            "base-speed": 60,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Cherubimon",
+            "base-hp": 650,
+            "base-mp": 200,
+            "base-atk": 100,
+            "base-def": 140,
+            "base-spirit": 100,
+            "base-speed": 70,
+            "base-recovery": 60,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Craniamon",
+            "base-hp": 680,
+            "base-mp": 120,
+            "base-atk": 160,
+            "base-def": 160,
+            "base-spirit": 40,
+            "base-speed": 90,
+            "base-recovery": 80,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Crusadermon",
+            "base-hp": 640,
+            "base-mp": 180,
+            "base-atk": 130,
+            "base-def": 110,
+            "base-spirit": 90,
+            "base-speed": 110,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Darkdramon",
+            "base-hp": 660,
+            "base-mp": 150,
+            "base-atk": 160,
+            "base-def": 130,
+            "base-spirit": 60,
+            "base-speed": 110,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Dianamon",
+            "base-hp": 600,
+            "base-mp": 200,
+            "base-atk": 180,
+            "base-def": 100,
+            "base-spirit": 130,
+            "base-speed": 80,
+            "base-recovery": 60,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Dorugoramon",
+            "base-hp": 710,
+            "base-mp": 110,
+            "base-atk": 150,
+            "base-def": 130,
+            "base-spirit": 70,
+            "base-speed": 80,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Dynasmon",
+            "base-hp": 640,
+            "base-mp": 130,
+            "base-atk": 170,
+            "base-def": 130,
+            "base-spirit": 120,
+            "base-speed": 100,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Gaiomon",
+            "base-hp": 680,
+            "base-mp": 120,
+            "base-atk": 112,
+            "base-def": 130,
+            "base-spirit": 60,
+            "base-speed": 90,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Gallantmon",
+            "base-hp": 630,
+            "base-mp": 130,
+            "base-atk": 200,
+            "base-def": 200,
+            "base-spirit": 100,
+            "base-speed": 100,
+            "base-recovery": 50,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Goldramon",
+            "base-hp": 700,
+            "base-mp": 250,
+            "base-atk": 130,
+            "base-def": 80,
+            "base-spirit": 150,
+            "base-speed": 100,
+            "base-recovery": 80,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "GoldRapidmon",
+            "base-hp": 650,
+            "base-mp": 120,
+            "base-atk": 150,
+            "base-def": 130,
+            "base-spirit": 90,
+            "base-speed": 100,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "GranKuwagamon",
+            "base-hp": 800,
+            "base-mp": 100,
+            "base-atk": 130,
+            "base-def": 150,
+            "base-spirit": 80,
+            "base-speed": 80,
+            "base-recovery": 80,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "HerculesKabuterimon",
+            "base-hp": 760,
+            "base-mp": 120,
+            "base-atk": 160,
+            "base-def": 160,
+            "base-spirit": 70,
+            "base-speed": 60,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Imperialdramon Dragon Mode",
+            "base-hp": 730,
+            "base-mp": 150,
+            "base-atk": 170,
+            "base-def": 160,
+            "base-spirit": 90,
+            "base-speed": 110,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Justimon",
+            "base-hp": 650,
+            "base-mp": 150,
+            "base-atk": 150,
+            "base-def": 150,
+            "base-spirit": 90,
+            "base-speed": 100,
+            "base-recovery": 80,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Kentaurosmon",
+            "base-hp": 720,
+            "base-mp": 130,
+            "base-atk": 140,
+            "base-def": 140,
+            "base-spirit": 100,
+            "base-speed": 140,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Kerpymon",
+            "base-hp": 650,
+            "base-mp": 200,
+            "base-atk": 100,
+            "base-def": 140,
+            "base-spirit": 100,
+            "base-speed": 70,
+            "base-recovery": 60,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Kuzuhamon",
+            "base-hp": 630,
+            "base-mp": 200,
+            "base-atk": 100,
+            "base-def": 150,
+            "base-spirit": 90,
+            "base-speed": 80,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Lilithmon",
+            "base-hp": 630,
+            "base-mp": 150,
+            "base-atk": 110,
+            "base-def": 120,
+            "base-spirit": 100,
+            "base-speed": 90,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Lotusmon",
+            "base-hp": 600,
+            "base-mp": 140,
+            "base-atk": 170,
+            "base-def": 150,
+            "base-spirit": 100,
+            "base-speed": 120,
+            "base-recovery": 70,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Magnadramon",
+            "base-hp": 630,
+            "base-mp": 200,
+            "base-atk": 100,
+            "base-def": 200,
+            "base-spirit": 150,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "Magnamon",
+            "base-hp": 720,
+            "base-mp": 130,
+            "base-atk": 200,
+            "base-def": 180,
+            "base-spirit": 130,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                                }] 
+            },
+        {
+            "name": "MegaGargomon",
+            "base-hp": 790,
+            "base-mp": 140,
+            "base-atk": 140,
+            "base-def": 200,
+            "base-spirit": 70,
+            "base-speed": 70,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+        {
+            "name": "Megidramon",
+            "base-hp": 650,
+            "base-mp": 140,
+            "base-atk": 180,
+            "base-def": 130,
+            "base-spirit": 80,
+            "base-speed": 100,
+            "base-recovery": 80,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "MetalGarurumon",
+            "base-hp": 700,
+            "base-mp": 120,
+            "base-atk": 150,
+            "base-def": 200,
+            "base-spirit": 70,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "MirageGaogamon",
+            "base-hp": 700,
+            "base-mp": 140,
+            "base-atk": 140,
+            "base-def": 120,
+            "base-spirit": 70,
+            "base-speed": 110,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Ophanimon",
+            "base-hp": 680,
+            "base-mp": 200,
+            "base-atk": 170,
+            "base-def": 120,
+            "base-spirit": 130,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Ouryumon",
+            "base-hp": 640,
+            "base-mp": 120,
+            "base-atk": 160,
+            "base-def": 160,
+            "base-spirit": 80,
+            "base-speed": 120,
+            "base-recovery": 60,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Phonenixmon",
+            "base-hp": 600,
+            "base-mp": 150,
+            "base-atk": 130,
+            "base-def": 130,
+            "base-spirit": 70,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Piedmon",
+            "base-hp": 630,
+            "base-mp": 160,
+            "base-atk": 170,
+            "base-def": 100,
+            "base-spirit": 50,
+            "base-speed": 100,
+            "base-recovery": 95,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Plesiomon",
+            "base-hp": 640,
+            "base-mp": 160,
+            "base-atk": 140,
+            "base-def": 160,
+            "base-spirit": 80,
+            "base-speed": 95,
+            "base-recovery": 110,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Puppetmon",
+            "base-hp": 550,
+            "base-mp": 130,
+            "base-atk": 120,
+            "base-def": 130,
+            "base-spirit": 70,
+            "base-speed": 120,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Rosemon",
+            "base-hp": 660,
+            "base-mp": 180,
+            "base-atk": 160,
+            "base-def": 140,
+            "base-spirit": 1000,
+            "base-speed": 90,
+            "base-recovery": 120,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "RustTyranomon",
+            "base-hp": 780,
+            "base-mp": 120,
+            "base-atk": 180,
+            "base-def": 160,
+            "base-spirit": 70,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "SaberLeomon",
+            "base-hp": 700,
+            "base-mp": 110,
+            "base-atk": 140,
+            "base-def": 120,
+            "base-spirit": 80,
+            "base-speed": 120,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Sakuyamon",
+            "base-hp": 630,
+            "base-mp": 200,
+            "base-atk": 100,
+            "base-def": 150,
+            "base-spirit": 90,
+            "base-speed": 80,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Seraphimon",
+            "base-hp": 740,
+            "base-mp": 200,
+            "base-atk": 170,
+            "base-def": 140,
+            "base-spirit": 120,
+            "base-speed": 80,
+            "base-recovery": 130,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "ShineGreymon",
+            "base-hp": 750,
+            "base-mp": 150,
+            "base-atk": 190,
+            "base-def": 100,
+            "base-spirit": 60,
+            "base-speed": 100,
+            "base-recovery": 800,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Slayerdramon",
+            "base-hp": 670,
+            "base-mp": 100,
+            "base-atk": 160,
+            "base-def": 140,
+            "base-spirit": 70,
+            "base-speed": 105,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+					        {
+            "name": "TigerVespamon",
+            "base-hp": 620,
+            "base-mp": 140,
+            "base-atk": 140,
+            "base-def": 130,
+            "base-spirit": 70,
+            "base-speed": 110,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "UlforceVeedramon",
+            "base-hp": 600,
+            "base-mp": 200,
+            "base-atk": 200,
+            "base-def": 100,
+            "base-spirit": 50,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "VenomMyotismon",
+            "base-hp": 700,
+            "base-mp": 140,
+            "base-atk": 130,
+            "base-def": 150,
+            "base-spirit": 80,
+            "base-speed": 100,
+            "base-recovery": 100,
+            "evolution-rank": "Mega",
+            "attribute": "Virus",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "Vikemon",
+            "base-hp": 710,
+            "base-mp": 120,
+            "base-atk": 170,
+            "base-def": 150,
+            "base-spirit": 80,
+            "base-speed": 80,
+            "base-recovery": 130,
+            "evolution-rank": "Mega",
+            "attribute": "Data",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }] 
+            },              
+				        {
+            "name": "WarGreymon",
+            "base-hp": 700,
+            "base-mp": 170,
+            "base-atk": 170,
+            "base-def": 150,
+            "base-spirit": 60,
+            "base-speed": 90,
+            "base-recovery": 90,
+            "evolution-rank": "Mega",
+            "attribute": "Vaccine",
+            "moves": [
+                {
+                    "name": "",
+                    "damage": "",
+                    "cost": "",
+                    "unlock-level": ""
+                }			
             ]
         }
     ]

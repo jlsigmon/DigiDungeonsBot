@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require("discord.js");
-const mysql = require('mysql2');
-const { dbHost, dbUserName, dbPassword, dbName } = require('../config.json');
+const { connectToDatabase } = require('../database')
+
 const { digimonList } = require('../digimon-config.json');
 
 module.exports = {
@@ -79,17 +79,13 @@ module.exports = {
         await interaction.reply('Running command...')
         const digimon = interaction.options.getString('digimon');
 
-        var con = mysql.createConnection({
-            host: dbHost,
-            user: dbUserName,
-            password: dbPassword,
-            database: dbName
-        })
+        var con = connectToDatabase()
 
         con.connect(async err => {
             if (err) {
                 console.log("ERROR - An error occured connecting to the database: " + err.message)
                 await interaction.editReply('An error occured!');
+                return
             }
         })
 
@@ -97,21 +93,24 @@ module.exports = {
             if (err) {
                 console.log("ERROR - An error occured getting the data: " + err.message)
                 await interaction.editReply('An error occured!')
+                return
             }
 
             if(rows.length > 0){
                 await interaction.editReply('You already have a starter digimon!')
-            }
-
+                return
+            } 
+            
             let selected = digimonList.find(digi => digi.name == digimon)
-
-            console.log(selected.name)
 
             if(selected){
                 let sql = `INSERT INTO users (userID, balance) VALUES ('${interaction.user.id}', ${0})`
                 con.query(sql, console.log);
 
-                sql = `INSERT INTO digimon (userID, name, evolution, level, exp, hp, mp, atk, def, spirit, speed, recovery, attribute, nextLevel, friendship) VALUES ('${interaction.user.id}', '${selected.name}', '${selected["evolution-rank"]}', ${1}, ${0}, ${selected["base-hp"]}, ${selected["base-mp"]}, ${selected["base-atk"]}, ${selected["base-def"]}, ${selected["base-spirit"]}, ${selected["base-speed"]}, ${selected["base-recovery"]}, '${selected.attribute}', ${5000}, ${0})`
+                sql = `INSERT INTO digimon (userID, name, evolution, level, exp, hp, mp, atk, def, spirit, speed, recovery, attribute, nextLevel, friendship) VALUES ('${interaction.user.id}', '${selected.name}', '${selected["evolution-rank"]}', ${0}, ${0}, ${selected["base-hp"]}, ${selected["base-mp"]}, ${selected["base-atk"]}, ${selected["base-def"]}, ${selected["base-spirit"]}, ${selected["base-speed"]}, ${selected["base-recovery"]}, '${selected.attribute}', ${5000}, ${0})`
+                con.query(sql, console.log);
+
+                sql = `INSERT INTO data (userID, aqua, beast, bird, dark, dragon, holy, machine, nature) VALUES ('${interaction.user.id}', ${0}, ${0}, ${0}, ${0}, ${0}, ${0}, ${0}, ${0})`
                 con.query(sql, console.log);
 
                 await interaction.editReply("You have chosen " + selected.name + " as your fisrt digimon!")

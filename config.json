@@ -1,9 +1,9 @@
 {
-    "token": "value",
-    "clientId": "value",
+    "token": "MTExNjExMDM5ODE5MDUzMDY4MA.GeFUxe.kIRmXEGsyBJSL5uXYT6cuK603L0k-2eWv5neP4",
+    "clientId": "1116110398190530680",
     "guildId": "value",
-    "dbHost": "value",
-    "dbUserName": "value",
-    "dbPassword": "value",
+    "dbHost": "localhost",
+    "dbUserName": "root",
+    "dbPassword": "81700",
     "dbName": "digidungeon"
 }
