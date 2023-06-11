@@ -4,7 +4,7 @@ const { connectToDatabase } = require('../database')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('view-digimon')
-        .setDescription('Allows you to choose a starter digimon!')
+        .setDescription('Allows you to view a specific digimon in your collection!')
         .addStringOption(option =>
             option
                 .setName('slot-number')

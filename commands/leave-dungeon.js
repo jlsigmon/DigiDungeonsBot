@@ -4,8 +4,8 @@ const { connectToDatabase } = require('../database')
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('decline')
-        .setDescription('Allows you to decline a party invite!'),
+        .setName('leave-dungeon')
+        .setDescription('Allows you to end a dungeon run!'),
     async execute(interaction) {
         await interaction.reply('Running command...')
 
@@ -22,14 +22,26 @@ module.exports = {
         let game = parties.find(party => party.players.includes(interaction.user.id))
 
         if(game == undefined) {
-            await interaction.editReply('You do not have a pending invite to a game!');
+            await interaction.editReply('You are not currently in a game!');
             return
         }
 
         let leader = game.players[0];
 
-        if(game.started){
-            await interaction.editReply('You cannot decline a invite to a game that is already started!');
+        if(leader != interaction.user.id) {
+            await interaction.editReply('You are not the party leader for this game!');
+            return
+        }
+
+        let name = interaction.member.nickname ? interaction.member.nickname : interaction.user.username
+
+        if(!game.started){
+            await interaction.editReply('You cannot end a game that has not started yet!');
+            return
+        }
+
+        if(interaction.channel.name != name + "'s Dungeon" && interaction.channel.threads == undefined){
+            await interaction.editReply('You must use this command in the dungeon thread or the channel the dungeon thread was created in!');
             return
         }
 
@@ -50,8 +62,14 @@ module.exports = {
 
         parties.splice(parties.findIndex(party => party.players.includes(interaction.user.id)), 1)
 
-        console.log(parties)
-        await interaction.editReply(`<@${leader}>, a player has declined their invite! The game party will be closed.`)
+        let channelThreads = interaction.channel.threads ? interaction.channel.threads : interaction.channel.parent.threads
+
+        let messageChannel = interaction.channel.name == name + "'s Dungeon" ? interaction.channel.parent : interaction.channel
+
+        const gameThread = channelThreads.cache.find(x => x.name === name + "'s Dungeon");
+        await gameThread.delete();
+
+        await messageChannel.send(`<@${leader}>, Your game has been closed. Thanks for playing!`)
 
         con.end()
     }

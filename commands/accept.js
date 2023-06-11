@@ -5,7 +5,7 @@ const { connectToDatabase } = require('../database')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('accept')
-        .setDescription('Allows you to choose a starter digimon!')
+        .setDescription('Allows you to accept a party invite!')
         .addStringOption(option =>
             option
                 .setName('slot-number')
@@ -65,7 +65,7 @@ module.exports = {
 
         let leader = game.players[0];
 
-        if(game == undefined || leader == interaction.user.id) {
+        if(leader == interaction.user.id) {
             await interaction.editReply('You do not have a pending invite to a game!');
             return
         }

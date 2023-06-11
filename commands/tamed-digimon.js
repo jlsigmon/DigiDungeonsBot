@@ -4,7 +4,7 @@ const { connectToDatabase } = require('../database')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('tamed-digimon')
-        .setDescription('Allows you to choose a starter digimon!'),
+        .setDescription('Allows you to view your digimon!'),
     async execute(interaction) {
         await interaction.reply('Running command...')
 

@@ -5,7 +5,7 @@ const { connectToDatabase } = require('../database')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('create-party')
-        .setDescription('Allows you to choose a starter digimon!')
+        .setDescription('Allows you to create a game party with up to 3 other people!')
         .addStringOption(option =>
             option
                 .setName('slot-number')
@@ -173,6 +173,7 @@ module.exports = {
                 if(checkInviteStatus([player1, player2, player3, player4], con, interaction)){
                     parties.push({
                         "players": [player1.id, player2.id, player3.id, player4.id],
+                        "started": false,
                         "player1": {
                             "user": player1,
                             "digimon": slot
