@@ -57,132 +57,151 @@ module.exports = {
             }
         })
 
-        if(player2 == null){
-            con.query(`SELECT * FROM users WHERE userID = '${player1.id}'`, async (err, rows) => {
-                if (err) {
-                    console.log("ERROR - An error occured getting the data: " + err.message)
-                    await interaction.editReply('An error occured!')
+        con.query(`SELECT * FROM digimon WHERE userID = '${interaction.user.id}'`, async (err, rows) => {
+            if (err) {
+                console.log("ERROR - An error occured getting the data: " + err.message)
+                await interaction.editReply('An error occured!')
+                return
+            }
+
+            if(rows.length < 1){
+                await interaction.editReply("You don't have any digimon! Please use the /choose-starter command to get started!")
+                return
+            } 
+
+            if(rows.length < slot){
+                await interaction.editReply("You don't have a digimon in that slot! Please use choose a different slot!")
+                return
+            } 
+
+            if(player2 == null){
+                con.query(`SELECT * FROM users WHERE userID = '${player1.id}'`, async (err, rows) => {
+                    if (err) {
+                        console.log("ERROR - An error occured getting the data: " + err.message)
+                        await interaction.editReply('An error occured!')
+                        return
+                    }
+        
+                    if(rows.length < 1){
+                        await interaction.editReply(`You do not have a digimon yet!`)
+                        return
+                    }
+    
+                    if(rows[0].hasInvite == true){
+                        await interaction.editReply(`You already have an invite or you are currently in a game!`)
+                        return
+                    }
+    
+                    let sql = `UPDATE users SET hasInvite = ${true} WHERE userID = '${player1.id}'`;
+                    con.query(sql, console.log)
+    
+                    parties.push({
+                        "players": [player1.id],
+                        "player1": {
+                            "user": player1,
+                            "digimon": slot
+                        },
+                        "player2": "",
+                        "player3": "",
+                        "player4": ""
+                    })
+    
+                    await interaction.editReply('Party has been created!')
+                    
+                    con.end()
+                    
                     return
+                })
+            }
+    
+            if(player3 == null && player2 != null){
+                console.log(player2)
+                if(checkInviteStatus([player1, player2], con, interaction)){
+                    parties.push({
+                        "players": [player1.id, player2.id],
+                        "player1": {
+                            "user": player1,
+                            "digimon": slot
+                        },
+                        "player2": {
+                            "user": player2,
+                            "digimon": "none",
+                            "accepted": false
+                        },
+                        "player3": "",
+                        "player4": ""
+                    })
+    
+                    await interaction.editReply(`Party has been created! ${player2} use /accept to accept or /decline to decline the invite!`)
+                    
+                    con.end()
+                    
+                    return
+                }
+            }
+    
+            if(player4 == null && player3 != null && player2 != null){
+                if(checkInviteStatus([player1, player2, player3], con, interaction)){
+                    parties.push({
+                        "players": [player1.id, player2.id, player3.id],
+                        "player1": {
+                            "user": player1,
+                            "digimon": slot
+                        },
+                        "player2": {
+                            "user": player2,
+                            "digimon": "none",
+                            "accepted": false
+                        },
+                        "player3": {
+                            "user": player3,
+                            "digimon": "none",
+                            "accepted": false
+                        },
+                        "player4": ""
+                    })
+    
+                    await interaction.editReply(`Party has been created! ${player2}, ${player3} use /accept to accept or /decline to decline the invite!`)
+                    
+                    con.end()
+                    
+                    return
+                }
+            }
+    
+            if(player4 != null && player3 != null && player2 != null){
+                if(checkInviteStatus([player1, player2, player3, player4], con, interaction)){
+                    parties.push({
+                        "players": [player1.id, player2.id, player3.id, player4.id],
+                        "player1": {
+                            "user": player1,
+                            "digimon": slot
+                        },
+                        "player2": {
+                            "user": player2,
+                            "digimon": "none",
+                            "accepted": false
+                        },
+                        "player3": {
+                            "user": player3,
+                            "digimon": "none",
+                            "accepted": false
+                        },
+                        "player4": {
+                            "user": player4,
+                            "digimon": "none",
+                            "accepted": false
+                        }
+                    })
                 }
     
-                if(rows.length < 1){
-                    await interaction.editReply(`You do not have a digimon yet!`)
-                    return
-                }
-
-                if(rows[0].hasInvite == true){
-                    await interaction.editReply(`You already have an invite or you are currently in a game!`)
-                    return
-                }
-
-                let sql = `UPDATE users SET hasInvite = ${true} WHERE userID = '${player1.id}'`;
-                con.query(sql, console.log)
-
-                parties.push({
-                    "players": [player1.id],
-                    "player1": {
-                        "user": player1,
-                        "digimon": slot
-                    },
-                    "playey2": "",
-                    "playey3": "",
-                    "playey4": ""
-                })
-                console.log(parties)
-                await interaction.editReply('Party has been created!')
+                await interaction.editReply(`Party has been created! ${player2}, ${player3}, ${player4} use /accept to accept or /decline to decline the invite!`)
                 
                 con.end()
-                
-                return
-            })
-        }
-
-        if(player3 == null && player2 != null){
-            if(checkInviteStatus([player1, player2], con, interaction)){
-                parties.push({
-                    "players": [player1.id, player2.id],
-                    "player1": {
-                        "user": player1,
-                        "digimon": slot
-                    },
-                    "playey2": {
-                        "user": player2,
-                        "digimon": "none",
-                        "accepted": false
-                    },
-                    "playey3": "",
-                    "playey4": ""
-                })
-                console.log(parties)
-                await interaction.editReply(`Party has been created! ${player2} use /accept to accept or /decline to decline the invite!`)
-                
-                con.end()
-                
+    
                 return
             }
-        }
-
-        if(player4 == null && player3 != null && player2 != null){
-            if(checkInviteStatus([player1, player2, player3], con, interaction)){
-                parties.push({
-                    "players": [player1.id, player2.id, player3.id],
-                    "player1": {
-                        "user": player1,
-                        "digimon": slot
-                    },
-                    "playey2": {
-                        "user": player2,
-                        "digimon": "none",
-                        "accepted": false
-                    },
-                    "playey3": {
-                        "user": player3,
-                        "digimon": "none",
-                        "accepted": false
-                    },
-                    "playey4": ""
-                })
-                console.log(parties)
-                await interaction.editReply(`Party has been created! ${player2}, ${player3} use /accept to accept or /decline to decline the invite!`)
-                
-                con.end()
-                
-                return
-            }
-        }
-
-        if(player4 != null && player3 != null && player2 != null){
-            if(checkInviteStatus([player1, player2, player3, player4], con, interaction)){
-                parties.push({
-                    "players": [player1.id, player2.id, player3.id, player4.id],
-                    "player1": {
-                        "user": player1,
-                        "digimon": slot
-                    },
-                    "playey2": {
-                        "user": player2,
-                        "digimon": "none",
-                        "accepted": false
-                    },
-                    "playey3": {
-                        "user": player3,
-                        "digimon": "none",
-                        "accepted": false
-                    },
-                    "playey4": {
-                        "user": player4,
-                        "digimon": "none",
-                        "accepted": false
-                    }
-                })
-            }
-            console.log(parties)
-            await interaction.editReply(`Party has been created! ${player2}, ${player3}, ${player4} use /accept to accept or /decline to decline the invite!`)
-            
-            con.end()
-
-            return
-        }
+        })
 
     }
 }
@@ -205,13 +224,11 @@ function checkInviteStatus(players, con, interaction){
                 await interaction.editReply(`${players[i].username} already has an invite or is currently in a game!`)
                 return false
             }
+
+            let sql = `UPDATE users SET hasInvite = ${true} WHERE userID = '${players[i].id}'`;
+            con.query(sql, console.log)
         })
     }
-
-    for(let i = 0; i < players.length; i++){
-        let sql = `UPDATE users SET hasInvite = ${true} WHERE userID = '${players[i].id}'`;
-        con.query(sql, console.log)
-    }   
 
     return true
 }

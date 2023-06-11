@@ -43,7 +43,7 @@ module.exports = {
                 return
             }
 
-            numDigimon = rows.length;
+            if(rows.length > 0) numDigimon = rows.length;
         })
 
         con.query(`SELECT * FROM data WHERE userID = '${interaction.user.id}'`, async (err, rows) => {
@@ -52,28 +52,30 @@ module.exports = {
                 await interaction.editReply('An error occured!')
                 return
             }
+            if(rows.length > 0){
 
-            let name = interaction.member.nickname
-            console.log(name)
-            if(name == undefined){
-                name = interaction.user.username
+                let name = interaction.member.nickname
+
+                if(name == undefined){
+                    name = interaction.user.username
+                }
+
+                let profileEmbed = new EmbedBuilder()
+                    .setTitle(`${name}'s Profile`)
+                    .setThumbnail(interaction.user.avatarURL())
+                    .addFields(
+                        { name: "Balance", value: bal.toString(), inline: true },
+                        { name: "Number of Digimon", value: `${numDigimon.toString()} / 10`, inline: true }
+                    )
+                    .addFields(
+                        { name: "Data", value: `Aqua: ${rows[0].aqua.toString()} | Beast: ${rows[0].beast.toString()}\n
+                        Bird: ${rows[0].bird.toString()} | Dark: ${rows[0].dark.toString()}\n
+                        Dragon: ${rows[0].dragon.toString()} | Holy: ${rows[0].holy.toString()}\n
+                        Machine: ${rows[0].machine.toString()} | Nature: ${rows[0].nature.toString()}\n`},
+                    )
+
+                await interaction.editReply({ embeds: [profileEmbed]})
             }
-
-            let profileEmbed = new EmbedBuilder()
-                .setTitle(`${name}'s Profile`)
-                .setThumbnail(interaction.user.avatarURL())
-                .addFields(
-                    { name: "Balance", value: bal.toString(), inline: true },
-                    { name: "Number of Digimon", value: `${numDigimon.toString()} / 10`, inline: true }
-                )
-                .addFields(
-                    { name: "Data", value: `Aqua: ${rows[0].aqua.toString()} | Beast: ${rows[0].beast.toString()}\n
-                    Bird: ${rows[0].bird.toString()} | Dark: ${rows[0].dark.toString()}\n
-                    Dragon: ${rows[0].dragon.toString()} | Holy: ${rows[0].holy.toString()}\n
-                    Machine: ${rows[0].machine.toString()} | Nature: ${rows[0].nature.toString()}\n`},
-                )
-
-            await interaction.editReply({ embeds: [profileEmbed]})
         })
 
         con.end()
