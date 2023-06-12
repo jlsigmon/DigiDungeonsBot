@@ -5,9 +5,22 @@ const { parties } = require("../parties.json")
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('start-dungeon')
-        .setDescription('Allows you to start a new dungeon with your party!'),
+        .setDescription('Allows you to start a new dungeon with your party!')
+        .addStringOption(option =>
+            option
+                .setName('dungeon-type')
+                .setDescription('Number of the slot of the digimon you would like to view.')
+                .setRequired(true)
+                .addChoices(
+                    { "name": "Standard", "value": "Standard"}, 
+                    { "name": "Standard+", "value": "Standard+"}, 
+                    { "name": "Ultra", "value": "Ultra"}, 
+                    { "name": "Event", "value": "Event"}
+                )
+        ),
     async execute(interaction) {
         await interaction.reply('Running command...')
+        const type = interaction.options.getString('dungeon-type')
 
         let game = parties.find(party => party.players.includes(interaction.user.id))
 
@@ -53,7 +66,7 @@ module.exports = {
 
         game.started = true
 
-        await dungeonThread.send(`<@${leader}>, Your game has been successfully started! Have fun!`)
+        await dungeonThread.send(`<@${leader}>, Your ${type} dungeon has been successfully started! Have fun!`)
 
     }
 }

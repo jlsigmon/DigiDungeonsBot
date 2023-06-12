@@ -112,11 +112,9 @@ module.exports = {
                     
                     return
                 })
-            }
-    
-            if(player3 == null && player2 != null){
-                console.log(player2)
-                if(checkInviteStatus([player1, player2], con, interaction)){
+            } else if(player3 == null && player2 != null && player1.id != player2.id){
+                checkInviteStatus([player1, player2], con, interaction).then(async () => {
+                    updateInviteStatus([player1, player2], con)
                     parties.push({
                         "players": [player1.id, player2.id],
                         "player1": {
@@ -137,11 +135,10 @@ module.exports = {
                     con.end()
                     
                     return
-                }
-            }
-    
-            if(player4 == null && player3 != null && player2 != null){
-                if(checkInviteStatus([player1, player2, player3], con, interaction)){
+                })
+            } else if(player4 == null && player3 != null && player2 != null && player2.id != player3.id && player2.id != player1.id && player1.id != player3.id){
+                checkInviteStatus([player1, player2, player3], con, interaction).then(async () => {
+                    updateInviteStatus([player1, player2, player3], con)
                     parties.push({
                         "players": [player1.id, player2.id, player3.id],
                         "player1": {
@@ -166,11 +163,10 @@ module.exports = {
                     con.end()
                     
                     return
-                }
-            }
-    
-            if(player4 != null && player3 != null && player2 != null){
-                if(checkInviteStatus([player1, player2, player3, player4], con, interaction)){
+                }) 
+            } else if(player4 != null && player3 != null && player2 != null && player2.id != player3.id && player4.id != player1.id && player1.id != player2.id && player1.id != player3.id && player2.id != player4.id && player3.id != player4.id){
+                checkInviteStatus([player1, player2, player3, player4], con, interaction).then(async () => {
+                    updateInviteStatus([player1, player2, player3, player4], con)
                     parties.push({
                         "players": [player1.id, player2.id, player3.id, player4.id],
                         "started": false,
@@ -194,42 +190,43 @@ module.exports = {
                             "accepted": false
                         }
                     })
-                }
-    
-                await interaction.editReply(`Party has been created! ${player2}, ${player3}, ${player4} use /accept to accept or /decline to decline the invite!`)
+
+                    await interaction.editReply(`Party has been created! ${player2}, ${player3}, ${player4} use /accept to accept or /decline to decline the invite!`)
                 
-                con.end()
+                    con.end()
     
+                    return
+                })
+            } else {
+                await interaction.editReply(`You cannot the same person multiple times!`)
                 return
             }
         })
-
     }
 }
 
-function checkInviteStatus(players, con, interaction){
+async function checkInviteStatus(players, con, interaction){
     for(let i = 0; i < players.length; i++){
         con.query(`SELECT * FROM users WHERE userID = '${players[i].id}'`, async (err, rows) => {
             if (err) {
                 console.log("ERROR - An error occured getting the data: " + err.message)
                 await interaction.editReply('An error occured!')
-                return false
             }
 
             if(rows.length < 1){
                 await interaction.editReply(`${players[i].username} does not have any digimon yet!`)
-                return false
             }
 
-            if(rows[0].hasInvite == true){
+            if(rows[0].hasInvite){
                 await interaction.editReply(`${players[i].username} already has an invite or is currently in a game!`)
-                return false
             }
-
-            let sql = `UPDATE users SET hasInvite = ${true} WHERE userID = '${players[i].id}'`;
-            con.query(sql, console.log)
         })
     }
+}
 
-    return true
+function updateInviteStatus(players, con){
+    for(let i = 0; i < players.length; i++){
+        let sql = `UPDATE users SET hasInvite = ${true} WHERE userID = '${players[i].id}'`;
+        con.query(sql, console.log)
+    }
 }
