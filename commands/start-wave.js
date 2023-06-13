@@ -1,11 +1,12 @@
-const { SlashCommandBuilder } = require("discord.js");
+const { SlashCommandBuilder } = require("discord.js")
 const { parties } = require("../parties.json")
+const { enemies } = require("../dungeon-config.json")
 const { connectToDatabase } = require('../database')
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('leave-dungeon')
-        .setDescription('Allows you to end a dungeon run!'),
+        .setName('start-wave')
+        .setDescription('Allows you to start the next wave of your dungeon!'),
     async execute(interaction) {
         await interaction.reply('Running command...')
 
@@ -40,27 +41,34 @@ module.exports = {
             return
         }
 
-        if(interaction.channel.name != name + "'s Dungeon" && interaction.channel.threads == undefined){
-            await interaction.editReply('You must use this command in the dungeon thread or the channel the dungeon thread was created in!');
+        if(interaction.channel.name != name + "'s Dungeon"){
+            await interaction.editReply('You must use this command in the dungeon thread!');
             return
         }
 
+        let digimon = [];
+
         for(let i = 0; i < game.players.length; i++){
-            con.query(`SELECT * FROM users WHERE userID = '${game.players[i]}'`, async (err, rows) => {
+            con.query(`SELECT * FROM digimon WHERE userID = '${game.players[i]}'`, async (err, rows) => {
                 if (err) {
                     console.log("ERROR - An error occured getting the data: " + err.message)
                     await interaction.editReply('An error occured!')
                     return
                 }
 
-                if(rows[0].hasInvite == true){
-                    let sql = `UPDATE users SET hasInvite = ${false} WHERE userID = '${game.players[i]}'`;
-                    con.query(sql, console.log)
+                let selectedDigimon = rows[game["player" + (i+1).toString()].digimon]
+
+                let digimonObject = {
+                    "user": selectedDigimon.userID,
+                    "name": selectedDigimon.name,
+                    "speed": selectedDigimon.speed
                 }
+
+                digimon.push(digimonObject)
             })
         }
 
-        parties.splice(parties.findIndex(party => party.players.includes(interaction.user.id)), 1)
+        game.waveNum += 1
 
         let channelThreads = interaction.channel.threads ? interaction.channel.threads : interaction.channel.parent.threads
 

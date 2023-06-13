@@ -97,6 +97,9 @@ module.exports = {
     
                     parties.push({
                         "players": [player1.id],
+                        "started": false,
+                        "waveNum": 0,
+                        "turnOrder": [],
                         "player1": {
                             "user": player1,
                             "digimon": slot
@@ -117,6 +120,9 @@ module.exports = {
                     updateInviteStatus([player1, player2], con)
                     parties.push({
                         "players": [player1.id, player2.id],
+                        "started": false,
+                        "waveNum": 0,
+                        "turnOrder": [],
                         "player1": {
                             "user": player1,
                             "digimon": slot
@@ -141,6 +147,9 @@ module.exports = {
                     updateInviteStatus([player1, player2, player3], con)
                     parties.push({
                         "players": [player1.id, player2.id, player3.id],
+                        "started": false,
+                        "waveNum": 0,
+                        "turnOrder": [],
                         "player1": {
                             "user": player1,
                             "digimon": slot
@@ -170,6 +179,8 @@ module.exports = {
                     parties.push({
                         "players": [player1.id, player2.id, player3.id, player4.id],
                         "started": false,
+                        "waveNum": 0,
+                        "turnOrder": [],
                         "player1": {
                             "user": player1,
                             "digimon": slot

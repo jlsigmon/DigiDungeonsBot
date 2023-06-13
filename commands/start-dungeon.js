@@ -36,7 +36,7 @@ module.exports = {
             return
         }
 
-        let name = interaction.member.nickname ? interaction.member.nickname : interaction.user.username
+        let name = interaction.user.username
         let numAccept = 1;
 
         if(game.players.length > 1){

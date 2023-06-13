@@ -1,0 +1,135 @@
+{
+    "wave1": {
+        "training": {
+            "minions": [
+                {
+                    "name": "Agumon",
+                    "attribute": "Vaccine",
+                    "hp": 20,
+                    "atk": 5,
+                    "def": 10,
+                    "spirit": 10,
+                    "speed": 10,
+                    "attacks": [
+                        {
+                            "name": "Pepper Breath",
+                            "damage": 5,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 1 
+                        },
+                        {
+                            "name": "Razor Claw",
+                            "damage": 3,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 1  
+                        }
+                    ]
+                },
+                {
+                    "name": "Gabumon",
+                    "attribute": "Data",
+                    "hp": 30,
+                    "atk": 5,
+                    "def": 20,
+                    "spirit": 10,
+                    "speed": 7,
+                    "attacks": [
+                        {
+                            "name": "Frozen Shears",
+                            "damage": 5,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 1 
+                        },
+                        {
+                            "name": "Chomp",
+                            "damage": 3,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 1  
+                        }
+                    ]
+                },
+                {
+                    "name": "Patamon",
+                    "attribute": "Vaccine",
+                    "hp": 20,
+                    "atk": 5,
+                    "def": 10,
+                    "spirit": 15,
+                    "speed": 10,
+                    "attacks": [
+                        {
+                            "name": "Bubble Breath",
+                            "damage": 4,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 1 
+                        },
+                        {
+                            "name": "Petty Light",
+                            "damage": 0,
+                            "heal": 1,
+                            "targets": 1,
+                            "times": 1  
+                        }
+                    ]
+                },
+                {
+                    "name": "Armadillomon",
+                    "attribute": "Virus",
+                    "hp": 30,
+                    "atk": 5,
+                    "def": 10,
+                    "spirit": 10,
+                    "speed": 5,
+                    "attacks": [
+                        {
+                            "name": "Cannonball",
+                            "damage": 9,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 1 
+                        },
+                        {
+                            "name": "Tremor",
+                            "damage": 3,
+                            "heal": 0,
+                            "targets": 4,
+                            "times": 1  
+                        }
+                    ]
+                }
+            ],
+            "bosses": [
+                {
+                    "name": "Boss Impmon",
+                    "attribute": "Virus",
+                    "hp": 150,
+                    "atk": 30,
+                    "def": 30,
+                    "spirit": 10,
+                    "speed": 12,
+                    "attacks": [
+                        {
+                            "name": "Imp Blaster",
+                            "damage": 10,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 1 
+                        },
+                        {
+                            "name": "Evil Punch",
+                            "damage": 3,
+                            "heal": 0,
+                            "targets": 1,
+                            "times": 2  
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
