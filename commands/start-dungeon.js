@@ -53,6 +53,13 @@ module.exports = {
             return
         }
 
+        if(game.started){
+            await interaction.editReply(`<@${leader}>, you have already started the dungeon!`)
+            return
+        }
+
+        game.type = type
+
         const dungeonThread = await interaction.channel.threads.create({
             name: name + "'s Dungeon",
             autoArchiveDuration: 60,

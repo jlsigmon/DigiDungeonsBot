@@ -97,8 +97,10 @@ module.exports = {
     
                     parties.push({
                         "players": [player1.id],
+                        "type": "",
                         "started": false,
                         "waveNum": 0,
+                        "currentEnemies": [],
                         "turnOrder": [],
                         "player1": {
                             "user": player1,
@@ -120,8 +122,10 @@ module.exports = {
                     updateInviteStatus([player1, player2], con)
                     parties.push({
                         "players": [player1.id, player2.id],
+                        "type": "",
                         "started": false,
                         "waveNum": 0,
+                        "currentEnemies": [],
                         "turnOrder": [],
                         "player1": {
                             "user": player1,
@@ -147,8 +151,10 @@ module.exports = {
                     updateInviteStatus([player1, player2, player3], con)
                     parties.push({
                         "players": [player1.id, player2.id, player3.id],
+                        "type": "",
                         "started": false,
                         "waveNum": 0,
+                        "currentEnemies": [],
                         "turnOrder": [],
                         "player1": {
                             "user": player1,
@@ -178,8 +184,10 @@ module.exports = {
                     updateInviteStatus([player1, player2, player3, player4], con)
                     parties.push({
                         "players": [player1.id, player2.id, player3.id, player4.id],
+                        "type": "",
                         "started": false,
                         "waveNum": 0,
+                        "currentEnemies": [],
                         "turnOrder": [],
                         "player1": {
                             "user": player1,

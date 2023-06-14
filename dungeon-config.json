@@ -1,6 +1,9 @@
 {
-    "wave1": {
+    "dungeon": {
         "training": {
+            "exp": 10,
+            "bossExp": 100,
+            "killBonus": 5,     
             "minions": [
                 {
                     "name": "Agumon",

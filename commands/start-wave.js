@@ -1,6 +1,8 @@
-const { SlashCommandBuilder } = require("discord.js")
+const { SlashCommandBuilder, EmbedBuilder } = require("discord.js")
+const wait = require('node:timers/promises').setTimeout;
 const { parties } = require("../parties.json")
-const { enemies } = require("../dungeon-config.json")
+const { dungeon } = require("../dungeon-config.json")
+const { makeMove } = require("../ai/normal")
 const { connectToDatabase } = require('../database')
 
 module.exports = {
@@ -46,7 +48,14 @@ module.exports = {
             return
         }
 
-        let digimon = [];
+        if(game.currentEnemies.length != 0){
+            await interaction.editReply('There are still enemy digimon alive in the current wave!');
+            return
+        }
+
+        let digimon = []
+        let enemyDigimon = ""
+        let turnOrder = ""
 
         for(let i = 0; i < game.players.length; i++){
             con.query(`SELECT * FROM digimon WHERE userID = '${game.players[i]}'`, async (err, rows) => {
@@ -56,29 +65,72 @@ module.exports = {
                     return
                 }
 
-                let selectedDigimon = rows[game["player" + (i+1).toString()].digimon]
+                let selectedDigimon = rows[game["player" + (i+1).toString()].digimon - 1]
 
                 let digimonObject = {
                     "user": selectedDigimon.userID,
+                    "username": game["player" + (i+1).toString()].user.username,
                     "name": selectedDigimon.name,
                     "speed": selectedDigimon.speed
                 }
 
                 digimon.push(digimonObject)
+
+                game.waveNum += 1
+
+                if(game.waveNum % 4 != 0){
+                    for(let i = 0; i < 5; i++){
+                        let eDigi = Math.floor(Math.random()*dungeon.training.minions.length)
+                        let newDigi = {
+                            "name": dungeon.training.minions[eDigi].name,
+                            "id": i + 1,
+                            "attribute": dungeon.training.minions[eDigi].attribute,
+                            "hp": dungeon.training.minions[eDigi].hp,
+                            "atk": dungeon.training.minions[eDigi].atk,
+                            "def": dungeon.training.minions[eDigi].def,
+                            "spirit": dungeon.training.minions[eDigi].spirit,
+                            "speed": dungeon.training.minions[eDigi].speed
+                        }
+                        digimon.push(newDigi)
+                        game.currentEnemies.push(newDigi)
+                        enemyDigimon += newDigi.name + " - " + newDigi.id + "\n"
+                    }
+                }
+
+                game.turnOrder = digimon.sort((a, b) => a.speed - b.speed).reverse()
+
+                for(let i = 0; i < game.turnOrder.length; i++){
+                    if(game.turnOrder[i].username != undefined){
+                        turnOrder += game.turnOrder[i].username + "'s "
+                    }
+                    turnOrder += game.turnOrder[i].name
+                    if(game.turnOrder[i].id != undefined){
+                        turnOrder += " - " + game.turnOrder[i].id
+                    }
+                    turnOrder += "\n"
+                }
+
+                let waveEmbed = new EmbedBuilder()
+                    .setTitle("Wave " + game.waveNum)
+                    .addFields(
+                        { name: 'Enemies', value: enemyDigimon, inline: true },
+                        { name: 'Turn Order', value: turnOrder, inline: true }
+                    )
+
+                await interaction.channel.send({ embeds: [waveEmbed]})
+
+                await wait(1000)
+
+                if(game.turnOrder[0].id != undefined){
+                    makeMove(interaction.channel, game, 0)
+                } else {
+                    await interaction.channel.send(`<@${game.turnOrder[0].user}>, it is your turn!`)
+                }
+
+                con.end()
             })
         }
 
-        game.waveNum += 1
-
-        let channelThreads = interaction.channel.threads ? interaction.channel.threads : interaction.channel.parent.threads
-
-        let messageChannel = interaction.channel.name == name + "'s Dungeon" ? interaction.channel.parent : interaction.channel
-
-        const gameThread = channelThreads.cache.find(x => x.name === name + "'s Dungeon");
-        await gameThread.delete();
-
-        await messageChannel.send(`<@${leader}>, Your game has been closed. Thanks for playing!`)
-
-        con.end()
+        
     }
 }
