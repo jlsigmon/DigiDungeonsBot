@@ -13,11 +13,24 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
-                                }] 
+                    "name": "Pepper Breath",
+                    "type": "attack",
+                    "damage": "8",
+                    "cost": "5",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Razor Claw",
+                    "type": "attack",
+                    "damage": "5",
+                    "cost": "3",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                }                            
+                            ] 
             },
         {
             "name": "Gabumon",
@@ -32,10 +45,22 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Frozen Shears",
+                    "type": "attack",
+                    "damage": "7",
+                    "cost": "4",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Chomp",
+                    "type": "attack",
+                    "damage": "5",
+                    "cost": "2",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },		
         {
@@ -51,10 +76,22 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Vine Whip",
+                    "type": "attack",
+                    "damage": "8",
+                    "cost": "4",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Overgrowth",
+                    "type": "attack",                    
+                    "damage": "3",
+                    "cost": "7",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -70,10 +107,23 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Thunder Shocker",
+                    "type": "attack",     
+                    "cooldown": "1",                                    
+                    "damage": "13",
+                    "cost": "7",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Piercing Buzz",
+                    "type": "attack",                    
+                    "damage": "5",
+                    "cost": "2",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -89,11 +139,23 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
-                                }] 
+                    "name": "Fire Bird",
+                    "type": "attack",                     
+                    "damage": "6",
+                    "cost": "3",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Sharp Talon",
+                    "type": "attack",                     
+                    "damage": "4",
+                    "cost": "1",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                }]  
             },
         {
             "name": "Veemon",
@@ -108,10 +170,23 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "V-Headbutt",
+                    "type": "attack",                     
+                    "damage": "11",
+                    "cost": "5",
+                    "cooldown": "1",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "V-Laser",
+                    "type": "attack",                     
+                    "damage": "6",
+                    "cost": "3",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -127,10 +202,22 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Silky Web",
+                    "type": "status", 
+                    "dropStat": ["speed"],
+                    "statAmount": [3],   
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Nibble",
+                    "type": "attack",                         
+                    "damage": "5",
+                    "cost": "3",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -146,10 +233,22 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Bubble Breath",
+                    "type": "attack",                         
+                    "damage": "8",
+                    "cost": "5",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Petty Light",
+                    "type": "heal",                         
+                    "heal": "12",
+                    "cost": "10",
+                    "target": "ally",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -165,10 +264,22 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Puppy Paddle",
+                    "type": "attack",                      
+                    "damage": "5",
+                    "cost": "2",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Petty Light",
+                    "type": "heal",                      
+                    "heal": "12",
+                    "cost": "10",
+                    "target": "ally",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -184,10 +295,23 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Cannonball",
+                    "type": "attack",                      
+                    "cooldown": "1",
+                    "damage": "7",
+                    "cost": "4",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Tremor",
+                    "type": "attack",                      
+                    "damage": "4",
+                    "cost": "7",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -203,10 +327,22 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Blaze Cannon",
+                    "type": "attack",                      
+                    "damage": "7",
+                    "cost": "5",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Tail Swipe",
+                    "type": "attack",                      
+                    "damage": "5",
+                    "cost": "3",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -222,11 +358,23 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
-                                }] 
+                    "name": "Swift Kick",
+                    "type": "attack",                      
+                    "damage": "9",
+                    "cost": "5",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Petty Aura",
+                    "type": "heal",                      
+                    "heal": "5",
+                    "cost": "10",
+                    "target": "Party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                }]  
             },
         {
             "name": "Terriermon",
@@ -241,10 +389,24 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Twister",
+                    "type": "attack",                      
+                    "damage": "8",
+                    "cost": "3",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Wind Turbine",
+                    "type": "status",                      
+                    "damage": "0",
+                    "cost": "2",
+                    "raiseStat": ["speed"],
+                    "statAmount": [2],                       
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -260,10 +422,22 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Imp Blaster",
+                    "type": "attack",                      
+                    "damage": "8",
+                    "cost": "5",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Evil Punch",
+                    "type": "attack",                      
+                    "damage": "3",
+                    "cost": "5",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -279,10 +453,22 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Whirlwind Punch",
+                    "type": "attack",                      
+                    "damage": "5",
+                    "cost": "6",
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Spin Kick",
+                    "type": "attack",                      
+                    "damage": "8",
+                    "cost": "3",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -298,10 +484,24 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Hand of Fate",
+                    "type": "attackStatus",
+                    "StatusOnVirusDefeat": ["attack"],
+                    "stat": [30],                      
+                    "damage": "35",
+                    "cost": "15",
+                    "target": "enemyself",
+                    "times": "1",                    
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Angel Staff",
+                    "type": "attack",                      
+                    "damage": "15",
+                    "cost": "10",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -317,11 +517,35 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Hammer Tail",
+                    "type": "attack",                      
+                    "damage": "45",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Seismic Strike",
+                    "type": "attack",                      
+                    "damage": "20",
+                    "cost": "25",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Rock Breaker",
+                    "type": "attack",  
+                    "bonusdamage": ["data"],
+                    "damageAmount": [15],                                            
+                    "damage": "30",
+                    "cost": "10",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
+                                
             },
         {
             "name": "Aquilamon",
@@ -336,10 +560,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Hawk Strike",
+                    "type": "attack",                      
+                    "damage": "25",
+                    "cost": "15",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Sweeping Talon",
+                    "type": "attack",                      
+                    "damage": "40",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Air Drop",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -355,10 +600,31 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Burning Bird",
+                    "type": "attack",                      
+                    "damage": "25",
+                    "cost": "15",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Sweeping Talon",
+                    "type": "attack",                      
+                    "damage": "40",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Fly By",
+                    "type": "attack",                                       
+                    "damage": "15",
+                    "cost": "25",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -374,10 +640,22 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Dangerous Love",
+                    "type": "attack",                      
+                    "damage": "30",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Lightning Paw",
+                    "type": "attack",                                         
+                    "damage": "40",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -393,10 +671,24 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Arm Bomber",
+                    "type": "attack",                      
+                    "damage": "40",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Hyper Heat",
+                    "type": "attackStatus",                      
+                    "damage": "20",
+                    "cost": "25",
+                    "dropStat": ["attack"],
+                    "statAmount": [10],   
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -412,10 +704,33 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Critical Punch",
+                    "type": "attack",
+                    "bonusdamage": ["virus"],
+                    "damageAmount": [15],                                             
+                    "damage": "40",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Combination Blow",
+                    "type": "attack",                      
+                    "damage": "20",
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Spinning Lariat",
+                    "type": "attack",                      
+                    "damage": "25",
+                    "cost": "15",  
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -431,10 +746,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Snow Globe",
+                    "type": "attack",                                             
+                    "damage": "20",
+                    "cost": "10",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Snowball",
+                    "type": "attack",                      
+                    "damage": "10",
+                    "cost": "10", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Icicle Throw",
+                    "type": "attack",                      
+                    "damage": "30",
+                    "cost": "20",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -450,10 +786,33 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Dash Double Claw",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Spiral Blow",
+                    "type": "attack",                      
+                    "damage": "30",
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Gaogamon Hound",
+                    "type": "attack",
+                    "bonusdamage": ["data"],
+                    "damageAmount": [25],                                             
+                    "damage": "30",
+                    "cost": "25",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -469,10 +828,31 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Bunny Pummel",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Gargo Pellet",
+                    "type": "attack",                      
+                    "damage": "30",
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Dumdum Uppercut",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "15",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -488,10 +868,32 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Freeze Fang",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "10",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Speed Charge",
+                    "type": "status",
+                    "raiseStat": ["speed"],
+                    "statAmount": [10],                         
+                    "cost": "20", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Hail",
+                    "type": "attack",                                     
+                    "damage": "15",
+                    "cost": "20",  
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -507,10 +909,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Mega Burst",
+                    "type": "attack",                                             
+                    "damage": "30",
+                    "cost": "15",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Horn Impuse",
+                    "type": "attack",
+                    "damage": "30",                                             
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Volcano",
+                    "type": "attack",                                     
+                    "damage": "15",
+                    "cost": "20",  
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -526,10 +949,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Reworking Ability",
+                    "type": "attack",                                             
+                    "damage": "30",
+                    "cost": "15",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "One-Two Neko Punch",
+                    "type": "attack",
+                    "damage": "15",                                             
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Cat Nip",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "20",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },            
         {
@@ -545,10 +989,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Pyro Blaster",
+                    "type": "attack",                                             
+                    "damage": "35",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Dragon Slash",
+                    "type": "attack",
+                    "damage": "45",                                             
+                    "cost": "25", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Raiden Blade",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "20",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -564,10 +1029,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Frozen Claw",
+                    "type": "attack",                                             
+                    "damage": "35",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Tundra Freeze",
+                    "type": "attack",
+                    "damage": "30",                                             
+                    "cost": "25", 
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Leather Wing",
+                    "type": "attack",                                     
+                    "damage": "15",
+                    "cost": "10",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -583,10 +1069,32 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Electro Shocker",
+                    "type": "attack",                                             
+                    "damage": "35",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Insect Thunder",
+                    "type": "attack",
+                    "damage": "20",                                             
+                    "cost": "10", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Big Horn",
+                    "type": "attack",
+                    "cooldown": "1",                             
+                    "damage": "50",
+                    "cost": "25",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -602,10 +1110,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Vice Grip",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "15",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Shadow Slash",
+                    "type": "attack",
+                    "damage": "30",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Guillatine",
+                    "type": "attack",                                     
+                    "damage": "80",
+                    "cost": "45",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -621,10 +1150,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Fox Tail Inferno",
+                    "type": "attack",                                             
+                    "damage": "20",
+                    "cost": "10",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Touhakken",
+                    "type": "attack",
+                    "damage": "40",                                             
+                    "cost": "25", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Light Veil",
+                    "type": "attack",                                     
+                    "heal": "20",
+                    "cost": "35",  
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -640,10 +1190,33 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Moon Night Bomb",
+                    "type": "attack",                                             
+                    "damage": "35",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Tear Arrow",
+                    "type": "attack",
+                    "bonusdamage": ["boss"],
+                    "damageAmount": [20],                       
+                    "damage": "20",                                             
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Moon Night Kick",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "15",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -659,10 +1232,35 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Wolf Kick",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "15",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Shed Armor",
+                    "type": "status",
+                    "dropStat": ["defense"],
+                    "statAmount": [999],   
+                    "raiseStat": ["attack"],
+                    "statraiseAmount": [100],  
+                    "coolodwn": "3",
+                    "cost": "20", 
+                    "target": "self",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Light Winner",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "20",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -678,10 +1276,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Lion Claw",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "15",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Rolling Tackle",
+                    "type": "attack",                     
+                    "damage": "20",                                             
+                    "cost": "10", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Tail Blade",
+                    "type": "attack",                                     
+                    "damage": "40",
+                    "cost": "25",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -697,10 +1316,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Magic Heal",
+                    "type": "heal",                                             
+                    "damage": "40",
+                    "cost": "20",
+                    "target": "ally",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Crystal Cloud",
+                    "type": "attack",                      
+                    "damage": "30",                                             
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Meteor Squall",
+                    "type": "attack",                                     
+                    "damage": "20",
+                    "cost": "30",  
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -716,29 +1356,71 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Assassin's Dance",
+                    "type": "attack",                                             
+                    "damage": "20",
+                    "cost": "35",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Spike Strike",
+                    "type": "attack",                     
+                    "damage": "20",                                             
+                    "cost": "10", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Moon Shooter",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "25",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
             "name": "Strikedramon",
-            "base-hp": 30,
-            "base-mp": 20,
-            "base-atk": 5,
-            "base-def": 4,
-            "base-spirit": 5,
-            "base-speed": 5,
-            "base-recovery": 8,
+            "base-hp": 70,
+            "base-mp": 60,
+            "base-atk": 25,
+            "base-def": 40,
+            "base-spirit": 25,
+            "base-speed": 35,
+            "base-recovery": 28,
             "evolution-rank": "Champion",
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Dragon Dance",
+                    "type": "attack",                                             
+                    "damage": "30",
+                    "cost": "15",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Hybrid Fury",
+                    "type": "attack",                     
+                    "damage": "30",                                             
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Draco Impact",
+                    "type": "attack",                                     
+                    "damage": "50",
+                    "cost": "50",  
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -754,10 +1436,31 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Hyper Cannon",
+                    "type": "attack",                                             
+                    "damage": "30",
+                    "cost": "15",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Hell Drive",
+                    "type": "attack",                     
+                    "damage": "25",                                             
+                    "cost": "15", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Machine Gun Arm",
+                    "type": "attack",                                     
+                    "damage": "15",
+                    "cost": "30",  
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -773,10 +1476,31 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Needle Spray",
+                    "type": "attack",                                             
+                    "damage": "12",
+                    "cost": "20",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Lightspeed Jabs",
+                    "type": "attack",                     
+                    "damage": "20",                                             
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Take Root",
+                    "type": "heal",                                     
+                    "damage": "30",
+                    "cost": "15",  
+                    "target": "self",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -792,10 +1516,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Fire Breath",
+                    "type": "attack",                                             
+                    "damage": "30",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Fire Fang",
+                    "type": "attack",                     
+                    "damage": "20",                                             
+                    "cost": "10", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Trample",
+                    "type": "attack",                                     
+                    "damage": "25",
+                    "cost": "15",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -811,10 +1556,32 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "V-Nova Blast",
+                    "type": "attack",                                             
+                    "damage": "35",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "V-Nova Blast Max",
+                    "type": "attack",
+                    "recoil": "50",
+                    "damage": "80",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Magnum Punch",
+                    "type": "attack",                                     
+                    "damage": "25",
+                    "cost": "15",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -830,10 +1597,22 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Spike Strike",
+                    "type": "attack",                                             
+                    "damage": "20",
+                    "cost": "10",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Bear Buster",
+                    "type": "attack",                     
+                    "damage": "50",                                             
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -849,10 +1628,31 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Magic Heal",
+                    "type": "heal",                                             
+                    "heal": "40",
+                    "cost": "20",
+                    "target": "ally",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Blink Breeze",
+                    "type": "attack",                     
+                    "damage": "30",                                             
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Magical Game",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "25",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -868,10 +1668,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Brain Drain",
+                    "type": "attack",                                             
+                    "damage": "40",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "attack",                     
+                    "damage": "20",                                             
+                    "cost": "10", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Falling Trunk",
+                    "type": "attack",                                     
+                    "damage": "30",
+                    "cost": "20",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -887,10 +1708,42 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "V-Wing Blade",
+                    "type": "attack",                                             
+                    "damage": "70",
+                    "cost": "40",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Dragon Impulse",
+                    "type": "attack",                     
+                    "damage": "60",                                             
+                    "cost": "35", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Twister Saber",
+                    "type": "attack",                     
+                    "damage": "40",                                             
+                    "cost": "15", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "Magnum Crusher",
+                    "type": "attackStatus",  
+                    "BossStatDrop": ["Defense"],
+                    "damageAmount": [30],                                                        
+                    "damage": "60",
+                    "cost": "50",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "35"
                                 }] 
             },
         {
@@ -906,10 +1759,42 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Heaven's Charm",
+                    "type": "attack",                                             
+                    "damage": "45",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Holy Slap",
+                    "type": "attack",                     
+                    "damage": "60",                                             
+                    "cost": "35", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Angel Wings",
+                    "type": "heal",                     
+                    "heal": "40",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "Celestial Arrow",
+                    "type": "attackStatus",  
+                    "bonusdamage": ["Virus"],
+                    "damageAmount": [30],                                                        
+                    "damage": "70",
+                    "cost": "50",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "40"
                                 }] 
             },
         {
@@ -925,10 +1810,42 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Rabbit Energy",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Meditation Cure",
+                    "type": "heal",                     
+                    "heal": "50",                                             
+                    "cost": "40", 
+                    "target": "ally",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Bunny Blades",
+                    "type": "attack",                                                          
+                    "damage": "90",
+                    "cost": "60",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "Potential for Evil",
+                    "type": "attack",                                                          
+                    "datacost": ["holy"],
+                    "datadrop": [100],                      
+                    "damage": "140",
+                    "cost": "90",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "25"
                                 }] 
             },
         {
@@ -944,10 +1861,31 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Nitro Stinger",
+                    "type": "attack",                                             
+                    "damage": "70",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Sky Rocket",
+                    "type": "attack",                     
+                    "heal": "70",                                             
+                    "cost": "60", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Hyper Cannon",
+                    "type": "attack",                                                          
+                    "damage": "90",
+                    "cost": "100",  
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -963,10 +1901,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Cherry Blast",
+                    "type": "attack",                                             
+                    "damage": "25",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Vine Attack",
+                    "type": "attack",                     
+                    "damage": "70",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Illusion Mist",
+                    "type": "attack",                                                          
+                    "damage": "80",
+                    "cost": "50",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -982,10 +1941,42 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Wind Cutter Sword",
+                    "type": "attack",                                             
+                    "damage": "75",
+                    "cost": "40",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Knowledge of Swift",
+                    "type": "status",
+                    "raiseStat": ["speed"],
+                    "statAmount": [30],                                                                                            
+                    "cost": "40", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Holy Wave",
+                    "type": "attack",                                                          
+                    "damage": "40",
+                    "cost": "25",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "Revive",
+                    "type": "heal",                                                          
+                    "revivestats": ["hp,mp"],
+                    "revivevalue": [200,50],                      
+                    "cost": "70",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1001,10 +1992,33 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Dark Archery",
+                    "type": "attack",                                             
+                    "damage": "60",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Ice Archery",
+                    "type": "attackStatus",
+                    "dropStat": ["speed"],
+                    "statAmount": [20],   
+                    "damage": "50",                                                                                                             
+                    "cost": "40", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Lunatic Dance",
+                    "type": "attack",                                                          
+                    "damage": "40",
+                    "cost": "80",  
+                    "target": "enemy",
+                    "times": "5",
+                    "unlock-level": "25"
                                 }] 
             },
         {
@@ -1020,10 +2034,31 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Haguro",
+                    "type": "attack",                                             
+                    "damage": "40",
+                    "cost": "40",
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Bird Breath",
+                    "type": "attack",                     
+                    "damage": "60",                                             
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Savage Emperor",
+                    "type": "attack",                     
+                    "damage": "40",                                             
+                    "cost": "50", 
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -1039,10 +2074,42 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Irritant Buzz",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Nightmare Soldiers",
+                    "type": "status",                     
+                    "raiseStat": ["defense"],
+                    "statAmount": [50],    
+                    "cost": "50", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Hell Masquerade",
+                    "type": "attack",                     
+                    "damage": "100",                                             
+                    "cost": "80", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "Wind Guardian",
+                    "type": "Status",  
+                    "raiseStat": ["speed"],
+                    "statAmount": [100],                                                        
+                    "cost": "50",  
+                    "target": "self",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1058,10 +2125,41 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Bloody Towers",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "40",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Metal Meteor",
+                    "type": "attack",
+                    "damage": "40", 
+                    "cost": "50", 
+                    "target": "enemyparty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Wing Strike",
+                    "type": "attack",                     
+                    "damage": "60",                                             
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "Attack Break",
+                    "type": "attackStatus",  
+                    "dropStat": ["attack"],
+                    "statAmount": [50],                                                        
+                    "cost": "40",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1077,10 +2175,41 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Wing Blade",
+                    "type": "attack",                                             
+                    "damage": "60",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Eagle Claw",
+                    "type": "attack",
+                    "damage": "80", 
+                    "cost": "50", 
+                    "target": "enemyparty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Storm",
+                    "type": "attack",                     
+                    "damage": "50",                                             
+                    "cost": "50", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "Fist of the Phoenix",
+                    "type": "attack",  
+                    "bonusdamage": ["virus","boss"],
+                    "damageAmount": [50],                                                        
+                    "cost": "40",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "35"
                                 }] 
             },
         {
@@ -1096,10 +2225,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Cross Blade",
+                    "type": "attack",                                             
+                    "damage": "30",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Grand Slash",
+                    "type": "attack",
+                    "damage": "50", 
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Whirlwind Blade",
+                    "type": "attack",                     
+                    "damage": "55",                                             
+                    "cost": "35", 
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -1115,10 +2265,42 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Cyclone Turbine",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Vortex Kick",
+                    "type": "attack",
+                    "damage": "80", 
+                    "cost": "40", 
+                    "target": "enemyparty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Whirlwind Fury",
+                    "type": "attack",                     
+                    "damage": "60",                                             
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },                                
+                {
+                    "name": "The King of Fist",
+                    "type": "attackStatus",  
+                    "bonusdamage": ["boss"],
+                    "damageAmount": [60],
+                    "damage": "90",                                                        
+                    "cost": "60",  
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1134,10 +2316,33 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Scrap Claw",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Megaton Hammer",
+                    "type": "attack",
+                    "damage": "80",                     
+                    "cost": "60", 
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Giga Crack",
+                    "type": "attackStatus",    
+                    "dropStat": ["speed"],
+                    "statAmount": [30],                                      
+                    "damage": "50",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -1153,10 +2358,38 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Berserk Sword",
+                    "type": "attack",
+                    "bonusdamage": ["minion"],
+                    "damageAmount": [40],                                                                  
+                    "damage": "55",
+                    "cost": "35",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Holy blade",
+                    "type": "attack",
+                    "bonusdamage": ["virus","boss"],
+                    "damageAmount": [50],                    
+                    "damage": "60",                     
+                    "cost": "35", 
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Duel",
+                    "type": "status",    
+                    "dropStat": ["defense"],
+                    "statAmount": [50],   
+                    "raiseStat": ["attack","speed"],
+                    "statraiseAmount": [100,50],                                            
+                    "cost": "25", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "25"
                                 }] 
             },
         {
@@ -1172,10 +2405,33 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Darkness Wave",
+                    "type": "attack",                                             
+                    "damage": "35",
+                    "cost": "20",
+                    "target": "enemyParty",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Stun Whip",
+                    "type": "attackStatus",
+                    "dropStat": ["speed"],
+                    "statAmount": [50],   
+                    "damage": "50", 
+                    "cost": "50", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Black Wing",
+                    "type": "attack",                     
+                    "damage": "60",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -1191,10 +2447,40 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Vicious Vine",
+                    "type": "attack",                                             
+                    "damage": "60",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Flower Wreath",
+                    "type": "heal",   
+                    "heal": "70", 
+                    "cost": "40", 
+                    "target": "ally",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Flower Bomb",
+                    "type": "attack",                     
+                    "damage": "65",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Flower Cutter",
+                    "type": "attack",                     
+                    "damage": "65",                                             
+                    "cost": "35", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "15"
                                 }] 
             },
         {
@@ -1210,10 +2496,40 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Winning Knuckle?",
+                    "type": "attack",                                             
+                    "damage": "60",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Mach Spiral",
+                    "type": "heal",   
+                    "damage": "50", 
+                    "cost": "30", 
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Howling Cannon",
+                    "type": "attack",                     
+                    "damage": "45",                                             
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Gaoga Tornado",
+                    "type": "attack",                     
+                    "damage": "70",                                             
+                    "cost": "70", 
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1229,10 +2545,42 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Judgment Slash",
+                    "type": "attack",                                             
+                    "damage": "80",
+                    "cost": "40",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Magna Antidote",
+                    "type": "heal",   
+                    "heal": "10", 
+                    "cost": "60", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Soul Vanisher",
+                    "type": "attack",  
+                    "bonusdamage": ["virus"],
+                    "damageAmount": [100],                                         
+                    "damage": "40",                                             
+                    "cost": "70", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Gate of Destiny",
+                    "type": "attack",                     
+                    "damage": "100",                                             
+                    "cost": "100", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1248,10 +2596,32 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Dark Side Attack",
+                    "type": "attack",   
+                    "damage": "50", 
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "DG Dimension",
+                    "type": "status",  
+                    "raiseStat": ["virus"],
+                    "statAmount": [70],                                                                                      
+                    "cost": "70", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Mega Flare",
+                    "type": "attack",                     
+                    "damage": "100",                                             
+                    "cost": "60", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1267,10 +2637,41 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Rocket Butt",
+                    "type": "attack",                                             
+                    "damage": "65",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Horn Buster",
+                    "type": "attack",   
+                    "damage": "80", 
+                    "cost": "35", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Lightning Wave",
+                    "type": "status",  
+                    "dropStat": ["speed"],
+                    "statAmount": [50],                                                                                      
+                    "cost": "25", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Super Electric Strike",
+                    "type": "attack",                     
+                    "damage": "100",                                             
+                    "cost": "90", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1286,10 +2687,40 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Giga Blaster",
+                    "type": "attack",                                             
+                    "damage": "70",
+                    "cost": "30",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Mega Claw",
+                    "type": "attack",   
+                    "damage": "80", 
+                    "cost": "45", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Giga Storm",
+                    "type": "attack",  
+                    "damage": "50",                                             
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Terra Destroyer",
+                    "type": "attack",                     
+                    "damage": "100",                                             
+                    "cost": "70", 
+                    "target": "enemyParty",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1305,10 +2736,41 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Bear Hug",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Bang Bang Punch",
+                    "type": "attack",   
+                    "damage": "80", 
+                    "cost": "40", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Love Song",
+                    "type": "attack",  
+                    "raiseStat": ["spirit"],
+                    "statAmount": [40],                                                                                     
+                    "cost": "25", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Heart Attack",
+                    "type": "attack",                     
+                    "damage": "200",                                             
+                    "cost": "150", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "40"
                                 }] 
             },
         {
@@ -1326,6 +2788,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1343,10 +2806,41 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Destructive Impulse",
+                    "type": "attack",
+                    "recoil": "40",
+                    "damage": "60",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Double Scissor Claw",
+                    "type": "attack",   
+                    "damage": "80", 
+                    "cost": "45", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Venom Trap",
+                    "type": "attack",                                           
+                    "damage": "45",                                             
+                    "cost": "25", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Thunder Fall",
+                    "type": "attack",                     
+                    "damage": "80",                                             
+                    "cost": "60", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "15"
                                 }] 
             },
         {
@@ -1362,10 +2856,40 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Sting Strike",
+                    "type": "attack",                                             
+                    "damage": "40",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Electric Bolt",
+                    "type": "attack",   
+                    "heal": "70", 
+                    "cost": "30", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Cable Catcher",
+                    "type": "attack",                                          
+                    "damage": "40",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Desperado Blaster",
+                    "type": "attack",                     
+                    "damage": "120",                                             
+                    "cost": "80", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -1381,10 +2905,40 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Rapid Fire",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Homing Blast",
+                    "type": "attack",   
+                    "damage": "70", 
+                    "cost": "50", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Tri-Beam",
+                    "type": "attack",                                        
+                    "damage": "40",                                             
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Miracle Missle",
+                    "type": "attack",                     
+                    "damage": "120",                                             
+                    "cost": "100", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "25"
                                 }] 
             },
         {
@@ -1400,10 +2954,43 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Trident Revolver",
+                    "type": "attack",                                             
+                    "damage": "40",
+                    "cost": "50",
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Solid Strike",
+                    "type": "attack",   
+                    "damage": "50", 
+                    "cost": "20", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Crack Bullet",
+                    "type": "attack",  
+                    "dropStat": ["defense"],
+                    "statAmount": [30],                                         
+                    "damage": "20",                                             
+                    "cost": "15", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Rising Destroyer",
+                    "type": "attack",
+                    "cooldown": "1",
+                    "damage": "160",                                             
+                    "cost": "100", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "40"
                                 }] 
             },
         {
@@ -1419,10 +3006,41 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Kachina Bombs",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Justice Beam",
+                    "type": "attack",   
+                    "damage": "100", 
+                    "cost": "70", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Super Spirit",
+                    "type": "status",  
+                    "raiseStat": ["spirit"],
+                    "statAmount": [50],
+                    "cost": "30", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Angel Light",
+                    "type": "heal",                     
+                    "heal": "60",                                             
+                    "cost": "40", 
+                    "target": "ally",
+                    "times": "1",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -1438,10 +3056,31 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Static Force",
+                    "type": "attack",                                             
+                    "damage": "60",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Air Field",
+                    "type": "attack",   
+                    "damage": "80", 
+                    "cost": "40", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Dual Sonic Laser",
+                    "type": "attack",                                        
+                    "damage": "40",                                             
+                    "cost": "50", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -1459,6 +3098,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1476,10 +3116,40 @@
             "attribute": "Vaccine",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Talismon Star",
+                    "type": "attack",                                             
+                    "damage": "80",
+                    "cost": "40",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Talismon of Light",
+                    "type": "heal",   
+                    "heal": "35", 
+                    "cost": "70", 
+                    "target": "ally",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Thousand Spells",
+                    "type": "attack",                                           
+                    "damage": "45",                                             
+                    "cost": "25", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Brush Stroke",
+                    "type": "attack",                     
+                    "damage": "190",                                             
+                    "cost": "100", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "50"
                                 }] 
             },
         {
@@ -1495,10 +3165,44 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Assault Balancer",
+                    "type": "status",   
+                    "raiseStat": ["attack"],
+                    "statAmount": [100],                                          
+                    "cost": "50", 
+                    "target": "party",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Radiation Blade",
+                    "type": "attack",  
+                    "bonusdamage": ["data"],
+                    "damageAmount": [20],                                         
+                    "damage": "55",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Trinity Force",
+                    "type": "attack",
+                    "partyCheck": ["WarGrowlmon","Taomon","Rapidmon"],
+                    "damage": "300",                                             
+                    "cost": "200", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Atomic Blaster",
+                    "type": "attack",                                             
+                    "damage": "120",
+                    "cost": "80",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1514,10 +3218,40 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Rising Moon Kick",
+                    "type": "attack",                                             
+                    "damage": "50",
+                    "cost": "20",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Fox Fire",
+                    "type": "attack",   
+                    "damage": "60",
+                    "cost": "30", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Wolf Claws",
+                    "type": "attack",                                           
+                    "damage": "60",                                             
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "2",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Wolf Fang Fist",
+                    "type": "attack",
+                    "damage": "80",                                             
+                    "cost": "110", 
+                    "target": "enemy",
+                    "times": "3",
+                    "unlock-level": "0"
                                 }] 
             },
         {
@@ -1533,10 +3267,34 @@
             "attribute": "Virus",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Pandora Dialogue",
+                    "type": "status",
+                    "dropStat": ["defense"],
+                    "statAmount": [80],   
+                    "raiseStat": ["attack","speed"],
+                    "statraiseAmount": [100,50],                     
+                    "cost": "60",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Eternal Nirvana",
+                    "type": "attack",
+                    "damage": "80",
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Words of Thoth",
+                    "type": "attack",
+                    "damage": "60",                                             
+                    "cost": "15", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "30"
                                 }] 
             },
         {
@@ -1552,10 +3310,33 @@
             "attribute": "Data",
             "moves": [
                 {
-                    "name": "",
-                    "damage": "",
-                    "cost": "",
-                    "unlock-level": ""
+                    "name": "Horn and Tusk",
+                    "type": "attack",
+                    "damage": "60",
+                    "cost": "25",
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Shell Shatter",
+                    "type": "attackStatus",
+                    "dropStat": ["defense"],
+                    "statAmount": [50],                         
+                    "damage": "70",
+                    "cost": "40", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "0"
+                                },
+                {
+                    "name": "Vulcan Hammer",
+                    "type": "attack",
+                    "damage": "100",                                             
+                    "cost": "50", 
+                    "target": "enemy",
+                    "times": "1",
+                    "unlock-level": "20"
                                 }] 
             },
         {
@@ -1573,6 +3354,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1592,6 +3374,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1611,6 +3394,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1630,6 +3414,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1649,6 +3434,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1668,6 +3454,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1687,6 +3474,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1706,6 +3494,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1725,6 +3514,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1744,6 +3534,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1763,6 +3554,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1782,6 +3574,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1801,6 +3594,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1820,6 +3614,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1839,6 +3634,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1858,6 +3654,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1877,6 +3674,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1896,6 +3694,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1915,6 +3714,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1934,6 +3734,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1953,6 +3754,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1972,6 +3774,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -1991,6 +3794,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -2010,6 +3814,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -2029,6 +3834,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -2048,6 +3854,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                                 }] 
@@ -2067,6 +3874,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2086,6 +3894,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2105,6 +3914,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2124,6 +3934,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2143,6 +3954,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2162,6 +3974,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2181,6 +3994,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2200,6 +4014,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2219,6 +4034,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2238,6 +4054,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2257,6 +4074,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2276,6 +4094,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2295,6 +4114,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2314,6 +4134,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2333,6 +4154,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2352,6 +4174,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2371,6 +4194,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2390,6 +4214,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2409,6 +4234,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2428,6 +4254,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2447,6 +4274,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }] 
@@ -2466,6 +4294,7 @@
                 {
                     "name": "",
                     "damage": "",
+                    "heal": "",
                     "cost": "",
                     "unlock-level": ""
                 }			

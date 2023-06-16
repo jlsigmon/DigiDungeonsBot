@@ -72,7 +72,9 @@ module.exports = {
             if(rows.length < slot){
                 await interaction.editReply("You don't have a digimon in that slot! Please use choose a different slot!")
                 return
-            } 
+            }
+
+            let digimonId = rows[slot-1].colId
 
             if(player2 == null){
                 con.query(`SELECT * FROM users WHERE userID = '${player1.id}'`, async (err, rows) => {
@@ -104,7 +106,7 @@ module.exports = {
                         "turnOrder": [],
                         "player1": {
                             "user": player1,
-                            "digimon": slot
+                            "digimon": digimonId
                         },
                         "player2": "",
                         "player3": "",
@@ -129,7 +131,7 @@ module.exports = {
                         "turnOrder": [],
                         "player1": {
                             "user": player1,
-                            "digimon": slot
+                            "digimon": digimonId
                         },
                         "player2": {
                             "user": player2,
@@ -158,7 +160,7 @@ module.exports = {
                         "turnOrder": [],
                         "player1": {
                             "user": player1,
-                            "digimon": slot
+                            "digimon": digimonId
                         },
                         "player2": {
                             "user": player2,
@@ -187,11 +189,12 @@ module.exports = {
                         "type": "",
                         "started": false,
                         "waveNum": 0,
+                        "turnNum": 0,
                         "currentEnemies": [],
                         "turnOrder": [],
                         "player1": {
                             "user": player1,
-                            "digimon": slot
+                            "digimon": digimonId
                         },
                         "player2": {
                             "user": player2,

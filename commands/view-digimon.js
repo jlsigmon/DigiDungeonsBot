@@ -64,7 +64,7 @@ module.exports = {
                     { name: 'Level', value: chosenDigimon.level.toString(), inline: true },
                 )
                 .addFields(
-                    { name: 'HP', value: chosenDigimon.hp.toString(), inline: true },
+                    { name: 'HP', value: chosenDigimon.hp.toString() + " / " + chosenDigimon.maxHp.toString(), inline: true },
                     { name: 'MP', value: chosenDigimon.mp.toString(), inline: true },
                     { name: 'Recovery', value: chosenDigimon.recovery.toString(), inline: true }
                 )

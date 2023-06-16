@@ -54,40 +54,43 @@ module.exports = {
                 await interaction.editReply("You don't have a digimon in that slot! Please use choose a different slot!")
                 return
             } 
-        })
 
-        let game = parties.find(party => party.players.includes(interaction.user.id))
+            let digimonId = rows[slot-1].colId
 
-        if(game == undefined) {
-            await interaction.editReply('You do not have a pending invite to a game!');
-            return
-        }
+            let game = parties.find(party => party.players.includes(interaction.user.id))
 
-        let leader = game.players[0];
-
-        if(leader == interaction.user.id) {
-            await interaction.editReply('You do not have a pending invite to a game!');
-            return
-        }
-
-        let name = interaction.member.nickname ? interaction.member.nickname : interaction.user.username
-        let numAccept = 1;
-
-        for(let i = 1; i < game.players.length; i++){
-            let n = i+1
-            if(game["player" + n.toString()].user.id == interaction.user.id){
-                game["player" + n.toString()].digimon = slot
-                game["player" + n.toString()].accepted = true
-                numAccept += 1
-            } else {
-                if(game["player" + n.toString()].accepted == true){
+            if(game == undefined) {
+                await interaction.editReply('You do not have a pending invite to a game!');
+                return
+            }
+    
+            let leader = game.players[0];
+    
+            if(leader == interaction.user.id) {
+                await interaction.editReply('You do not have a pending invite to a game!');
+                return
+            }
+    
+            let name = interaction.member.nickname ? interaction.member.nickname : interaction.user.username
+            let numAccept = 1;
+    
+            for(let i = 1; i < game.players.length; i++){
+                let n = i+1
+                if(game["player" + n.toString()].user.id == interaction.user.id){
+                    game["player" + n.toString()].digimon = digimonId
+                    game["player" + n.toString()].accepted = true
                     numAccept += 1
+                } else {
+                    if(game["player" + n.toString()].accepted == true){
+                        numAccept += 1
+                    }
                 }
             }
-        }
+    
+            await interaction.editReply(`<@${leader}>, ${name} has accepted their invite! ${numAccept} out of ${game.players.length} have accepted.`)
+    
+            con.end()
+        })
 
-        await interaction.editReply(`<@${leader}>, ${name} has accepted their invite! ${numAccept} out of ${game.players.length} have accepted.`)
-
-        con.end()
     }
 }
