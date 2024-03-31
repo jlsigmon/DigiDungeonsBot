@@ -1,6 +1,8 @@
 const { EmbedBuilder } = require("discord.js")
 const wait = require('node:timers/promises').setTimeout;
 const { dungeon } = require("../dungeon-config.json")
+const { setOptions } = require("../commands/turn-options")
+const { calculateDamage } = require("../shared_functions/battle-functions")
 const { connectToDatabase } = require('../database')
 
 module.exports = {
@@ -10,8 +12,8 @@ module.exports = {
 }
 
 async function makeMove(channel, game, index){
-    await channel.send(`Calculating enemy ${game.turnOrder[index].name}'s turn...`)
-    
+    await channel.send(`*Calculating enemy ${game.turnOrder[index].name}'s turn...*`)
+
     let con = connectToDatabase()
 
     con.connect(async err => {
@@ -30,53 +32,46 @@ async function makeMove(channel, game, index){
 
     let target = ""
 
-    switch(selectedMove.targets){
+    switch(selectedMove.numTargets){
         case 1:
-            target = Math.floor(Math.random()*game.players.length) + 1
+            target = Math.floor(Math.random()*game.playerDigimon.length)
             break
         case 4:
             target = "all"
             break
     }
 
-     if(target != "all"){
-        let tPlayer = game["player" + target.toString()]
+    console.log(target)
 
-        con.query(`SELECT * FROM digimon WHERE colId = '${tPlayer.digimon}'`, async (err, rows) => {
+     if(target != "all"){
+        con.query(`SELECT * FROM digimon WHERE colId = ${game.playerDigimon[target]}`, async (err, rows) => {
             if (err) {
                 console.log("ERROR - An error occured getting the data: " + err.message)
-                await interaction.editReply('An error occured!')
+                channel.send(`<@${game.player}>, an error occured! Please close this dungeon. Sorry for the inconvenience!`)
             }
 
-            let bonus = 0
-
-            if(((enemyDigimon.attribute == "Data" && rows[0].attribute == "Vaccine") || (enemyDigimon.attribute == "Vaccine" && rows[0].attribute == "Virus") || (enemyDigimon.attribute == "Virus" && rows[0].attribute == "Data")) && selectedMove.times == 1){
-                bonus = 5
-            }
-
-            let totalDamage = 0
-
-            for(let i = 0; i < selectedMove.times; i++){
-                totalDamage += selectedMove.damage + (Math.floor(enemyDigimon.atk / 5) + bonus) - (Math.floor(rows[0].def / 10))
-            }
+            let totalDamage = calculateDamage(enemyDigimon, rows[0], selectedMove)
 
             let newHp = rows[0].hp - totalDamage
 
-            let sql = `UPDATE digimon SET hp = ${newHp} WHERE colId = ${tPlayer.digimon}`;
+            let sql = `UPDATE digimon SET hp = ${newHp} WHERE colId = ${game.playerDigimon[target]}`;
             con.query(sql, console.log)
 
-            await channel.send(`Enemy ${game.turnOrder[index].name} used ${selectedMove.name} on ${tPlayer.user.username}'s ${rows[0].name} dealing ${totalDamage} damage!\n${rows[0].name} now has ${rows[0].hp - totalDamage} health remaining!`)
+            await channel.send(`**Enemy ${game.turnOrder[index].name} used ${selectedMove.name} on your ${rows[0].name} dealing ${totalDamage} damage!\n${rows[0].name} now has ${rows[0].hp - totalDamage} health remaining!**`)
 
             con.end()
 
             await wait(1000)
 
-            index += 1;
+            game.turnIndex += 1
 
-            if(game.turnOrder[index].id != undefined){
-                makeMove(channel, game, index)
+            if(game.turnIndex >= game.turnOrder.length) game.turnIndex = 0
+
+            if(game.turnOrder[index].username == undefined){
+                makeMove(channel, game, game.turnIndex)
             } else {
-                await channel.send(`<@${game.turnOrder[index].user}>, it is your turn!`)
+                game.currentTurn = game.turnOrder[index].digiId
+                await channel.send(`<@${game.player}>, it is your ${game.turnOrder[index].name}'s turn! Choose an attack with /use-attack!`)
             }
         })
     }

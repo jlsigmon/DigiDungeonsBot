@@ -15,20 +15,20 @@
                 {
                     "name": "Pepper Breath",
                     "type": "attack",
-                    "damage": "8",
-                    "cost": "5",
+                    "damage": 8,
+                    "cost": 5,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Razor Claw",
                     "type": "attack",
-                    "damage": "5",
-                    "cost": "3",
+                    "damage": 5,
+                    "cost": 3,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }                            
                             ] 
             },
@@ -47,20 +47,20 @@
                 {
                     "name": "Frozen Shears",
                     "type": "attack",
-                    "damage": "7",
-                    "cost": "4",
+                    "damage": 7,
+                    "cost": 4,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Chomp",
                     "type": "attack",
-                    "damage": "5",
-                    "cost": "2",
+                    "damage": 5,
+                    "cost": 2,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },		
         {
@@ -78,20 +78,20 @@
                 {
                     "name": "Vine Whip",
                     "type": "attack",
-                    "damage": "8",
-                    "cost": "4",
+                    "damage": 8,
+                    "cost": 4,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Overgrowth",
                     "type": "attack",                    
-                    "damage": "3",
-                    "cost": "7",
+                    "damage": 3,
+                    "cost": 7,
                     "target": "enemyParty",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -109,21 +109,21 @@
                 {
                     "name": "Thunder Shocker",
                     "type": "attack",     
-                    "cooldown": "1",                                    
-                    "damage": "13",
-                    "cost": "7",
+                    "cooldown": 1,                                    
+                    "damage": 13,
+                    "cost": 7,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Piercing Buzz",
                     "type": "attack",                    
-                    "damage": "5",
-                    "cost": "2",
+                    "damage": 5,
+                    "cost": 2,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -141,20 +141,20 @@
                 {
                     "name": "Fire Bird",
                     "type": "attack",                     
-                    "damage": "6",
-                    "cost": "3",
+                    "damage": 6,
+                    "cost": 3,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Sharp Talon",
                     "type": "attack",                     
-                    "damage": "4",
-                    "cost": "1",
+                    "damage": 4,
+                    "cost": 1,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }]  
             },
         {
@@ -172,21 +172,21 @@
                 {
                     "name": "V-Headbutt",
                     "type": "attack",                     
-                    "damage": "11",
-                    "cost": "5",
-                    "cooldown": "1",
+                    "damage": 11,
+                    "cost": 5,
+                    "cooldown": 1,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "V-Laser",
                     "type": "attack",                     
-                    "damage": "6",
-                    "cost": "3",
+                    "damage": 6,
+                    "cost": 3,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -207,17 +207,17 @@
                     "dropStat": ["speed"],
                     "statAmount": [3],   
                     "target": "enemyParty",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Nibble",
                     "type": "attack",                         
-                    "damage": "5",
-                    "cost": "3",
+                    "damage": 5,
+                    "cost": 3,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -235,20 +235,20 @@
                 {
                     "name": "Bubble Breath",
                     "type": "attack",                         
-                    "damage": "8",
-                    "cost": "5",
+                    "damage": 8,
+                    "cost": 5,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Petty Light",
                     "type": "heal",                         
-                    "heal": "12",
-                    "cost": "10",
+                    "heal": 12,
+                    "cost": 10,
                     "target": "ally",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -265,21 +265,23 @@
             "moves": [
                 {
                     "name": "Puppy Paddle",
-                    "type": "attack",                      
-                    "damage": "5",
-                    "cost": "2",
+                    "type": "attack",
+                    "damage": 5,
+                    "cost": 2,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Petty Light",
                     "type": "heal",                      
-                    "heal": "12",
-                    "cost": "10",
+                    "heal": 12,
+                    "cost": 10,
                     "target": "ally",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -297,21 +299,23 @@
                 {
                     "name": "Cannonball",
                     "type": "attack",                      
-                    "cooldown": "1",
-                    "damage": "7",
-                    "cost": "4",
+                    "cooldown": 1,
+                    "damage": 7,
+                    "cost": 4,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Tremor",
                     "type": "attack",                      
-                    "damage": "4",
-                    "cost": "7",
+                    "damage": 4,
+                    "cost": 7,
                     "target": "enemyParty",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -329,20 +333,21 @@
                 {
                     "name": "Blaze Cannon",
                     "type": "attack",                      
-                    "damage": "7",
-                    "cost": "5",
+                    "damage": 7,
+                    "cost": 5,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Tail Swipe",
                     "type": "attack",                      
-                    "damage": "5",
-                    "cost": "3",
+                    "damage": 5,
+                    "cost": 3,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -360,20 +365,22 @@
                 {
                     "name": "Swift Kick",
                     "type": "attack",                      
-                    "damage": "9",
-                    "cost": "5",
+                    "damage": 9,
+                    "cost": 5,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Petty Aura",
                     "type": "heal",                      
-                    "heal": "5",
-                    "cost": "10",
+                    "heal": 5,
+                    "cost": 10,
                     "target": "Party",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 }]  
             },
         {
@@ -391,22 +398,24 @@
                 {
                     "name": "Twister",
                     "type": "attack",                      
-                    "damage": "8",
-                    "cost": "3",
+                    "damage": 8,
+                    "cost": 3,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Wind Turbine",
                     "type": "status",                      
-                    "damage": "0",
-                    "cost": "2",
+                    "damage": 0,
+                    "cost": 2,
                     "raiseStat": ["speed"],
                     "statAmount": [2],                       
                     "target": "party",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -424,20 +433,22 @@
                 {
                     "name": "Imp Blaster",
                     "type": "attack",                      
-                    "damage": "8",
-                    "cost": "5",
+                    "damage": 8,
+                    "cost": 5,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Evil Punch",
                     "type": "attack",                      
-                    "damage": "3",
-                    "cost": "5",
+                    "damage": 3,
+                    "cost": 5,
                     "target": "enemy",
-                    "times": "2",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 2,
+                    "unlock-level": 0
                                 }] 
             },
         {
@@ -455,20 +466,22 @@
                 {
                     "name": "Whirlwind Punch",
                     "type": "attack",                      
-                    "damage": "5",
-                    "cost": "6",
+                    "damage": 5,
+                    "cost": 6,
                     "target": "enemy",
-                    "times": "3",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 3,
+                    "unlock-level": 0
                                 },
                 {
                     "name": "Spin Kick",
                     "type": "attack",                      
-                    "damage": "8",
-                    "cost": "3",
+                    "damage": 8,
+                    "cost": 3,
                     "target": "enemy",
-                    "times": "1",
-                    "unlock-level": "0"
+                    "numTargets": 1,                    
+                    "times": 1,
+                    "unlock-level": 0
                                 }] 
             },
         {

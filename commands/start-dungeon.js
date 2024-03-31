@@ -22,39 +22,17 @@ module.exports = {
         await interaction.reply('Running command...')
         const type = interaction.options.getString('dungeon-type')
 
-        let game = parties.find(party => party.players.includes(interaction.user.id))
+        let game = parties.find(party => party.player == interaction.user.id)
 
         if(game == undefined) {
-            await interaction.editReply('You are not currently the party leader of a game!');
-            return
-        }
-
-        let leader = game.players[0];
-       
-        if(leader != interaction.user.id) {
-            await interaction.editReply('You are not the party leader for this game!');
+            await interaction.editReply('You currently do not have a party created! Please create a party!');
             return
         }
 
         let name = interaction.user.username
-        let numAccept = 1;
-
-        if(game.players.length > 1){
-            for(let i = 1; i < game.players.length; i++){
-                let n = i+1;
-                if(game["player" + n.toString()].accepted == true){
-                    numAccept += 1
-                }
-            }
-        }
-
-        if(numAccept < game.players.length){
-            await interaction.editReply(`<@${leader}>, there are still players who have not accepted! PLease wait until everyone accepts!`)
-            return
-        }
 
         if(game.started){
-            await interaction.editReply(`<@${leader}>, you have already started the dungeon!`)
+            await interaction.editReply(`<@${game.player}>, you have already started the dungeon!`)
             return
         }
 
@@ -67,13 +45,11 @@ module.exports = {
             reason: 'Need to create a thread for the game'
         })
 
-        for(let i = 1; i < game.players.length; i++){
-            await dungeonThread.members.add(game.players[i])
-        }
-
+        await dungeonThread.members.add(game.player)
+        
         game.started = true
 
-        await dungeonThread.send(`<@${leader}>, Your ${type} dungeon has been successfully started! Have fun!`)
+        await dungeonThread.send(`<@${game.player}>, Your ${type} dungeon has been successfully started! Have fun!`)
 
     }
 }

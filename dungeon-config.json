@@ -16,16 +16,20 @@
                     "attacks": [
                         {
                             "name": "Pepper Breath",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 5,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1 
                         },
                         {
                             "name": "Razor Claw",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 3,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1  
                         }
                     ]
@@ -41,16 +45,20 @@
                     "attacks": [
                         {
                             "name": "Frozen Shears",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 5,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1 
                         },
                         {
                             "name": "Chomp",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 3,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1  
                         }
                     ]
@@ -66,16 +74,20 @@
                     "attacks": [
                         {
                             "name": "Bubble Breath",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 4,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1 
                         },
                         {
                             "name": "Petty Light",
+                            "type": "heal",
+                            "target": "ally",                            
                             "damage": 0,
                             "heal": 1,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1  
                         }
                     ]
@@ -91,16 +103,19 @@
                     "attacks": [
                         {
                             "name": "Cannonball",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 9,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1 
                         },
                         {
                             "name": "Tremor",
+                            "type": "attack",
+                            "target": "enemyParty",                            
                             "damage": 3,
                             "heal": 0,
-                            "targets": 4,
                             "times": 1  
                         }
                     ]
@@ -118,16 +133,20 @@
                     "attacks": [
                         {
                             "name": "Imp Blaster",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 10,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 1 
                         },
                         {
                             "name": "Evil Punch",
+                            "type": "attack",
+                            "target": "enemy",                            
                             "damage": 3,
                             "heal": 0,
-                            "targets": 1,
+                            "numTargets": 1,
                             "times": 2  
                         }
                     ]

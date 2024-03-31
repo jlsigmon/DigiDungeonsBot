@@ -22,24 +22,17 @@ module.exports = {
             }
         })
 
-        let game = parties.find(party => party.players.includes(interaction.user.id))
+        let game = parties.find(party => party.player == interaction.user.id)
 
         if(game == undefined) {
             await interaction.editReply('You are not currently in a game!');
             return
         }
 
-        let leader = game.players[0];
-
-        if(leader != interaction.user.id) {
-            await interaction.editReply('You are not the party leader for this game!');
-            return
-        }
-
         let name = interaction.user.username
 
         if(!game.started){
-            await interaction.editReply('You cannot end a game that has not started yet!');
+            await interaction.editReply('You cannot start a new wave in a dungeon that has not been started!');
             return
         }
 
@@ -57,19 +50,20 @@ module.exports = {
         let enemyDigimon = ""
         let turnOrder = ""
 
-        for(let i = 0; i < game.players.length; i++){
-            con.query(`SELECT * FROM digimon WHERE userID = '${game.players[i]}'`, async (err, rows) => {
+        for(let i = 0; i < game.playerDigimon.length; i++){
+            con.query(`SELECT * FROM digimon WHERE userID = '${game.player}' AND colId = ${game.playerDigimon[i]}`, async (err, rows) => {
                 if (err) {
                     console.log("ERROR - An error occured getting the data: " + err.message)
                     await interaction.editReply('An error occured!')
                     return
                 }
 
-                let selectedDigimon = rows[game["player" + (i+1).toString()].digimon - 1]
+                let selectedDigimon = rows[0]
 
                 let digimonObject = {
                     "user": selectedDigimon.userID,
-                    "username": game["player" + (i+1).toString()].user.username,
+                    "username": name,
+                    "digiId": selectedDigimon.colId,
                     "name": selectedDigimon.name,
                     "speed": selectedDigimon.speed
                 }
@@ -121,10 +115,13 @@ module.exports = {
 
                 await wait(1000)
 
-                if(game.turnOrder[0].id != undefined){
+                if(game.turnOrder[0].username == undefined){
+                    game.currentTurn = -1
+                    game.turnIndex = 0
                     makeMove(interaction.channel, game, 0)
                 } else {
-                    await interaction.channel.send(`<@${game.turnOrder[0].user}>, it is your turn!`)
+                    game.currentTurn = game.turnOrder[0].digiId
+                    await interaction.channel.send(`<@${game.turnOrder[0].user}>, it is your ${game.turnOrder[0].name}'s turn! Choose a move with /use-attack!`)
                 }
 
                 con.end()

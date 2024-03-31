@@ -19,17 +19,10 @@ module.exports = {
             }
         })
 
-        let game = parties.find(party => party.players.includes(interaction.user.id))
+        let game = parties.find(party => party.player == interaction.user.id)
 
         if(game == undefined) {
             await interaction.editReply('You are not currently in a game!');
-            return
-        }
-
-        let leader = game.players[0];
-
-        if(leader != interaction.user.id) {
-            await interaction.editReply('You are not the party leader for this game!');
             return
         }
 
@@ -45,22 +38,7 @@ module.exports = {
             return
         }
 
-        for(let i = 0; i < game.players.length; i++){
-            con.query(`SELECT * FROM users WHERE userID = '${game.players[i]}'`, async (err, rows) => {
-                if (err) {
-                    console.log("ERROR - An error occured getting the data: " + err.message)
-                    await interaction.editReply('An error occured!')
-                    return
-                }
-
-                if(rows[0].hasInvite == true){
-                    let sql = `UPDATE users SET hasInvite = ${false} WHERE userID = '${game.players[i]}'`;
-                    con.query(sql, console.log)
-                }
-            })
-        }
-
-        parties.splice(parties.findIndex(party => party.players.includes(interaction.user.id)), 1)
+        parties.splice(parties.findIndex(party => party.player == interaction.user.id), 1)
 
         let channelThreads = interaction.channel.threads ? interaction.channel.threads : interaction.channel.parent.threads
 
@@ -69,7 +47,7 @@ module.exports = {
         const gameThread = channelThreads.cache.find(x => x.name === name + "'s Dungeon");
         await gameThread.delete();
 
-        await messageChannel.send(`<@${leader}>, Your game has been closed. Thanks for playing!`)
+        await messageChannel.send(`<@${interaction.user.id}>, Your game has been closed. Thanks for playing!`)
 
         con.end()
     }
