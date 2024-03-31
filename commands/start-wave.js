@@ -98,7 +98,7 @@ module.exports = {
                         turnOrder += game.turnOrder[i].username + "'s "
                     }
                     turnOrder += game.turnOrder[i].name
-                    if(game.turnOrder[i].id != undefined){
+                    if(game.turnOrder[i].username == undefined){
                         turnOrder += " - " + game.turnOrder[i].id
                     }
                     turnOrder += "\n"

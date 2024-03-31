@@ -32,18 +32,24 @@ async function makeMove(channel, game, index){
 
     let target = ""
 
-    switch(selectedMove.numTargets){
-        case 1:
-            target = Math.floor(Math.random()*game.playerDigimon.length)
-            break
-        case 4:
-            target = "all"
-            break
+    if(selectedMove.target == "enemy"){
+        switch(selectedMove.numTargets){
+            case 1:
+                target = Math.floor(Math.random()*game.playerDigimon.length)
+                break
+            case 4:
+                target = "all"
+                break
+        }
+    } else if(selectedMove.target == "enemyParty"){
+        target = "all"
+    } else {
+        target = selectedMove.target
     }
 
     console.log(target)
 
-     if(target != "all"){
+     if(target != "all" && target != "ally" && target != "party"){
         con.query(`SELECT * FROM digimon WHERE colId = ${game.playerDigimon[target]}`, async (err, rows) => {
             if (err) {
                 console.log("ERROR - An error occured getting the data: " + err.message)
@@ -63,16 +69,26 @@ async function makeMove(channel, game, index){
 
             await wait(1000)
 
-            game.turnIndex += 1
-
-            if(game.turnIndex >= game.turnOrder.length) game.turnIndex = 0
-
-            if(game.turnOrder[index].username == undefined){
-                makeMove(channel, game, game.turnIndex)
-            } else {
-                game.currentTurn = game.turnOrder[index].digiId
-                await channel.send(`<@${game.player}>, it is your ${game.turnOrder[index].name}'s turn! Choose an attack with /use-attack!`)
-            }
+            endTurn(game, channel)
         })
+    } else {
+        await channel.send(`The move the enemy tried to use is not yet implemented yet! Please check back later! Skipping turn...`)
+
+        await wait(1000)
+
+        endTurn(game, channel)
+    }
+}
+
+async function endTurn(game, channel){
+    game.turnIndex += 1
+
+    if(game.turnIndex >= game.turnOrder.length) game.turnIndex = 0
+
+    if(game.turnOrder[game.turnIndex].username == undefined){
+        makeMove(channel, game, game.turnIndex)
+    } else {
+        game.currentTurn = game.turnOrder[game.turnIndex].digiId
+        await channel.send(`<@${game.player}>, it is your ${game.turnOrder[game.turnIndex].name}'s turn! Choose an attack with /use-attack!`)
     }
 }

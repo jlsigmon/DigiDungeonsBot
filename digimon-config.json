@@ -313,7 +313,7 @@
                     "damage": 4,
                     "cost": 7,
                     "target": "enemyParty",
-                    "numTargets": 1,                    
+                    "numTargets": 4,                    
                     "times": 1,
                     "unlock-level": 0
                                 }] 
@@ -378,7 +378,7 @@
                     "heal": 5,
                     "cost": 10,
                     "target": "Party",
-                    "numTargets": 1,                    
+                    "numTargets": 4,                    
                     "times": 1,
                     "unlock-level": 0
                                 }]  
@@ -413,7 +413,7 @@
                     "raiseStat": ["speed"],
                     "statAmount": [2],                       
                     "target": "party",
-                    "numTargets": 1,                    
+                    "numTargets": 4,                    
                     "times": 1,
                     "unlock-level": 0
                                 }] 

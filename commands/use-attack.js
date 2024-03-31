@@ -135,7 +135,7 @@ async function processAttackMove(menu, filter, interaction, game, move, user){
 
             let targetName = selection.name + " - " + selection.id
 
-            await interaction.channel.send(`Your ${user.name} has used ${move.name} on ${targetName} dealing ${totalDamage} damage! ${targetName} now has ${selection.hp} hp remaining!`)
+            await interaction.channel.send(`**Your ${user.name} has used ${move.name} on ${targetName} dealing ${totalDamage} damage! ${targetName} now has ${selection.hp} hp remaining!**`)
 
             endTheTurn(game, interaction)
         })
@@ -147,6 +147,7 @@ async function processAttackMove(menu, filter, interaction, game, move, user){
 }
 
 async function endTheTurn(game, interaction){
+    await wait(1000)
     console.log("Ending the turn!")
 
     game.turnIndex += 1;
