@@ -51,7 +51,7 @@ module.exports = {
         let turnOrder = ""
 
         for(let i = 0; i < game.playerDigimon.length; i++){
-            con.query(`SELECT * FROM digimon WHERE userID = '${game.player}' AND colId = ${game.playerDigimon[i]}`, async (err, rows) => {
+            con.query(`SELECT * FROM digimon WHERE userID = '${game.player}' AND colId = ${game.playerDigimon[i].colId}`, async (err, rows) => {
                 if (err) {
                     console.log("ERROR - An error occured getting the data: " + err.message)
                     await interaction.editReply('An error occured!')

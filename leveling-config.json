@@ -1,0 +1,34 @@
+{
+    "statIncrease": {
+        "rookie": {
+            "levelCap": 30,
+            "data":{
+                "hp": 13,
+                "mp": 9,
+                "atk": 5,
+                "def": 6,
+                "spirit": 4,
+                "speed": 3,
+                "recovery": 10
+            },
+            "vaccine":{
+                "hp": 10,
+                "mp": 10,
+                "atk": 5,
+                "def": 5,
+                "spirit": 7,
+                "speed": 3,
+                "recovery": 10
+            },
+            "virus":{
+                "hp": 12,
+                "mp": 8,
+                "atk": 9,
+                "def": 3,
+                "spirit": 4,
+                "speed": 4,
+                "recovery": 10
+            }
+        }
+    }
+}

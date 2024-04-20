@@ -50,7 +50,7 @@ async function makeMove(channel, game, index){
     console.log(target)
 
      if(target != "all" && target != "ally" && target != "party"){
-        con.query(`SELECT * FROM digimon WHERE colId = ${game.playerDigimon[target]}`, async (err, rows) => {
+        con.query(`SELECT * FROM digimon WHERE colId = ${game.playerDigimon[target].colId}`, async (err, rows) => {
             if (err) {
                 console.log("ERROR - An error occured getting the data: " + err.message)
                 channel.send(`<@${game.player}>, an error occured! Please close this dungeon. Sorry for the inconvenience!`)
@@ -60,7 +60,7 @@ async function makeMove(channel, game, index){
 
             let newHp = rows[0].hp - totalDamage
 
-            let sql = `UPDATE digimon SET hp = ${newHp} WHERE colId = ${game.playerDigimon[target]}`;
+            let sql = `UPDATE digimon SET hp = ${newHp} WHERE colId = ${game.playerDigimon[target].colId}`;
             con.query(sql, console.log)
 
             await channel.send(`**Enemy ${game.turnOrder[index].name} used ${selectedMove.name} on your ${rows[0].name} dealing ${totalDamage} damage!\n${rows[0].name} now has ${rows[0].hp - totalDamage} health remaining!**`)
@@ -81,9 +81,21 @@ async function makeMove(channel, game, index){
 }
 
 async function endTurn(game, channel){
-    game.turnIndex += 1
+    let valid = false 
+    
+    while(!valid){
+        game.turnIndex += 1;
 
-    if(game.turnIndex >= game.turnOrder.length) game.turnIndex = 0
+        if(game.turnIndex >= game.turnOrder.length) game.turnIndex = 0
+
+        if(game.turnOrder[game.turnIndex].username == undefined){
+            if(game.turnOrder[game.turnIndex].hp > 0){
+                valid = true
+            }
+        } else {
+            valid = true
+        }
+    }
 
     if(game.turnOrder[game.turnIndex].username == undefined){
         makeMove(channel, game, game.turnIndex)

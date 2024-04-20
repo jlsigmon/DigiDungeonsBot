@@ -97,7 +97,7 @@ module.exports = {
             }
 
             if(rows.length > 0){
-                if(rows[0].numStarters == 2){
+                if(rows[0].numStarters == 4){
                         await interaction.editReply('You already have claimed your two starter digimon!')
                         return
                 } else {
@@ -106,7 +106,7 @@ module.exports = {
                                 let sql = `UPDATE users SET numStarters = ${rows[0].numStarters + 1} WHERE userID = ${interaction.user.id}`
                                 con.query(sql, console.log);
                 
-                                sql = `INSERT INTO digimon (userID, name, evolution, level, exp, hp, mp, atk, def, spirit, speed, recovery, attribute, nextLevel, friendship) VALUES ('${interaction.user.id}', '${selected.name}', '${selected["evolution-rank"]}', ${0}, ${0}, ${selected["base-hp"]}, ${selected["base-mp"]}, ${selected["base-atk"]}, ${selected["base-def"]}, ${selected["base-spirit"]}, ${selected["base-speed"]}, ${selected["base-recovery"]}, '${selected.attribute}', ${200}, ${0})`
+                                sql = `INSERT INTO digimon (userID, name, evolution, level, exp, hp, mp, atk, def, spirit, speed, recovery, attribute, nextLevel, friendship) VALUES ('${interaction.user.id}', '${selected.name}', '${selected["evolution-rank"]}', ${0}, ${0}, ${selected["base-hp"]}, ${selected["base-mp"]}, ${selected["base-atk"]}, ${selected["base-def"]}, ${selected["base-spirit"]}, ${selected["base-speed"]}, ${selected["base-recovery"]}, '${selected.attribute}', ${25}, ${0})`
                                 con.query(sql, console.log);
                 
                              await interaction.editReply("You have chosen " + selected.name + " as your second starter digimon!")

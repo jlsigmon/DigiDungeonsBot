@@ -143,15 +143,15 @@ module.exports = {
             }
 
             let partyDigi = []
-            partyDigi.push(rows[slotOne-1].colId)
+            partyDigi.push(rows[slotOne-1])
             if (slotTwo != null) {
-                partyDigi.push(rows[slotTwo-1].colId)
+                partyDigi.push(rows[slotTwo-1])
             }
             if (slotThree != null){
-                partyDigi.push(rows[slotThree-1].colId)
+                partyDigi.push(rows[slotThree-1])
             }
             if (slotFour != null){
-                partyDigi.push(rows[slotFour-1].colId)
+                partyDigi.push(rows[slotFour-1])
             }
           
             con.query(`SELECT * FROM users WHERE userID = '${player.id}'`, async (err, rows) => {
