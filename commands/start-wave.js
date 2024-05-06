@@ -72,10 +72,13 @@ module.exports = {
 
                 game.waveNum += 1
 
-                if(game.waveNum % 4 != 0){
-                    for(let i = 0; i < 5; i++){
-                        let eDigi = Math.floor(Math.random()*dungeon.training.minions.length)
-                        let newDigi = {
+                
+                for(let i = 0; i < dungeon.training.waves[game.waveNum]; i++){
+                    let eDigi = 0
+                    let newDigi = {}
+                    if(game.waveNum != (dungeon.training.waves.length-1)){
+                        eDigi = Math.floor(Math.random()*dungeon.training.minions.length)
+                        newDigi = {
                             "name": dungeon.training.minions[eDigi].name,
                             "id": i + 1,
                             "attribute": dungeon.training.minions[eDigi].attribute,
@@ -85,12 +88,24 @@ module.exports = {
                             "spirit": dungeon.training.minions[eDigi].spirit,
                             "speed": dungeon.training.minions[eDigi].speed
                         }
-                        digimon.push(newDigi)
-                        game.currentEnemies.push(newDigi)
-                        enemyDigimon += newDigi.name + " - " + newDigi.id + "\n"
+                    } else {
+                        eDigi = Math.floor(Math.random()*dungeon.training.bosses.length)
+                        newDigi = {
+                            "name": dungeon.training.bosses[eDigi].name,
+                            "id": i + 1,
+                            "attribute": dungeon.training.bosses[eDigi].attribute,
+                            "hp": dungeon.training.bosses[eDigi].hp,
+                            "atk": dungeon.training.bosses[eDigi].atk,
+                            "def": dungeon.training.bosses[eDigi].def,
+                            "spirit": dungeon.training.bosses[eDigi].spirit,
+                            "speed": dungeon.training.bosses[eDigi].speed
+                        }
                     }
+                    digimon.push(newDigi)
+                    game.currentEnemies.push(newDigi)
+                    enemyDigimon += newDigi.name + " - " + newDigi.id + "\n"
                 }
-
+                
                 game.turnOrder = digimon.sort((a, b) => a.speed - b.speed).reverse()
 
                 for(let i = 0; i < game.turnOrder.length; i++){

@@ -12,10 +12,7 @@ module.exports = {
                 .setDescription('Number of the slot of the digimon you would like to view.')
                 .setRequired(true)
                 .addChoices(
-                    { "name": "Training", "value": "Training"}, 
-                    { "name": "Standard+", "value": "Standard+"}, 
-                    { "name": "Ultra", "value": "Ultra"}, 
-                    { "name": "Event", "value": "Event"}
+                    { "name": "Training", "value": "training"}
                 )
         ),
     async execute(interaction) {

@@ -4,6 +4,7 @@
             "exp": 10,
             "bossExp": 100,
             "killBonus": 5,     
+            "waves": [5,5,1],
             "minions": [
                 {
                     "name": "Agumon",

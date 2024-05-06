@@ -212,6 +212,8 @@ async function processHealMove(menu, filter, interaction, game, move, user){
 }
 
 async function processAttackAllMove(interaction, game, move, user){
+    let defeatedEnemies = []
+
     for(i = 0; i < game.currentEnemies.length; i++){
         let selection = game.currentEnemies[i]
 
@@ -222,9 +224,13 @@ async function processAttackAllMove(interaction, game, move, user){
         let targetName = selection.name + " - " + selection.id
 
         await interaction.channel.send(`**Your ${user.name} has used ${move.name} on ${targetName} dealing ${totalDamage} damage! ${targetName} now has ${selection.hp} hp remaining!**`)
+
+        if(selection.hp <= 0){
+            defeatedEnemies.push(selection)
+        }
     }
 
-    endTheTurn(game, interaction)
+    endTheTurn(game, interaction, defeatedEnemies)
 }
 
 async function endTheTurn(game, interaction, defeatedEnemies){
@@ -248,13 +254,20 @@ async function endTheTurn(game, interaction, defeatedEnemies){
                     
                     let newXp = 0
                     let maxLevel = 0
+                    let gainXp = 0
+
+                    if(game.waveNum == (dungeon.training.length - 1)) {
+                        gainXp = dungeon.training.bossExp
+                    } else {
+                        gainXp = dungeon.training.exp
+                    }
 
                     if(digi.colId == game.currentTurn){
                         dealtFinal = digi.name
-                        newXp = rows[0].exp + dungeon.training.exp + dungeon.training.killBonus
+                        newXp = rows[0].exp + gainXp + dungeon.training.killBonus
                         console.log("New XP value EXP: " + newXp + ". Gained EXP Value should be " + (dungeon.training.exp + dungeon.training.killBonus))
                     } else {
-                        newXp = rows[0].exp + dungeon.training.exp
+                        newXp = rows[0].exp + gainXp
                         console.log("New XP value EXP: " + newXp + ". Gained EXP Value should be " + (dungeon.training.exp))
                     }
 
@@ -287,29 +300,43 @@ async function endTheTurn(game, interaction, defeatedEnemies){
 
     con.end()
 
-    let valid = false 
+    if(game.currentEnemies.length == 0){
+        game.waveNum += 1
 
-    while(!valid){
-        game.turnIndex += 1;
+        if(game.waveNum == dungeon.training.waves.length){
+            await interaction.channel.send(`<@${game.player}>, YOU HAVE DEFEATED THE BOSS! The dungeon has been completed and will close shortly! Thank you for playing!`)
 
-        if(game.turnIndex >= game.turnOrder.length) game.turnIndex = 0
+            await wait(1000)
+
+            await interaction.channel.delete('The game has been complete so the thread will be closed.')
+        } else {
+            await interaction.channel.send(`<@${game.player}>, you have defeated all of the digimon in the current wave! When you are ready, use /start-wave to begin the next wave!`)
+        }
+    } else {
+        let valid = false 
+
+        while(!valid){
+            game.turnIndex += 1;
+
+            if(game.turnIndex >= game.turnOrder.length) game.turnIndex = 0
+
+            if(game.turnOrder[game.turnIndex].username == undefined){
+                if(game.turnOrder[game.turnIndex].hp > 0){
+                    valid = true
+                } else {
+                    console.log("Skipping to next digimon since this one has perished...")
+                }
+            } else {
+                valid = true
+            }
+        }
 
         if(game.turnOrder[game.turnIndex].username == undefined){
-            if(game.turnOrder[game.turnIndex].hp > 0){
-                valid = true
-            } else {
-                console.log("Skipping to next digimon since this one has perished...")
-            }
+            makeMove(interaction.channel, game, game.turnIndex)
         } else {
-            valid = true
+            game.currentTurn = game.turnOrder[index].digiId
+            await interaction.channel.send(`<@${game.player}>, it is your ${game.turnOrder[index].name}'s turn! Choose an attack with /use-attack!`)
         }
-    }
-
-    if(game.turnOrder[game.turnIndex].username == undefined){
-        makeMove(interaction.channel, game, game.turnIndex)
-    } else {
-        game.currentTurn = game.turnOrder[index].digiId
-        await interaction.channel.send(`<@${game.player}>, it is your ${game.turnOrder[index].name}'s turn! Choose an attack with /use-attack!`)
     }
 }
 
