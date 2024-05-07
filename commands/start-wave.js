@@ -73,10 +73,10 @@ module.exports = {
                 game.waveNum += 1
 
                 
-                for(let i = 0; i < dungeon.training.waves[game.waveNum]; i++){
+                for(let i = 0; i < dungeon.training.waves[game.waveNum-1]; i++){
                     let eDigi = 0
                     let newDigi = {}
-                    if(game.waveNum != (dungeon.training.waves.length-1)){
+                    if(game.waveNum != dungeon.training.waves.length){
                         eDigi = Math.floor(Math.random()*dungeon.training.minions.length)
                         newDigi = {
                             "name": dungeon.training.minions[eDigi].name,

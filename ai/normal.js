@@ -24,7 +24,12 @@ async function makeMove(channel, game, index){
         }
     })
 
-    let enemyDigimon = dungeon.training.minions.find(digimon => digimon.name == game.turnOrder[index].name)
+    let enemyDigimon = {}
+    if(game.waveNum != dungeon.training.waves.length){
+        enemyDigimon = dungeon.training.minions.find(digimon => digimon.name == game.turnOrder[index].name)
+    } else {
+        enemyDigimon = dungeon.training.bosses.find(digimon => digimon.name == game.turnOrder[index].name)
+    }
 
     let moveSet = enemyDigimon.attacks
 

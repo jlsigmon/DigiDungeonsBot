@@ -301,12 +301,10 @@ async function endTheTurn(game, interaction, defeatedEnemies){
     con.end()
 
     if(game.currentEnemies.length == 0){
-        game.waveNum += 1
-
         if(game.waveNum == dungeon.training.waves.length){
             await interaction.channel.send(`<@${game.player}>, YOU HAVE DEFEATED THE BOSS! The dungeon has been completed and will close shortly! Thank you for playing!`)
 
-            await wait(1000)
+            await wait(2000)
 
             await interaction.channel.delete('The game has been complete so the thread will be closed.')
         } else {
@@ -334,8 +332,8 @@ async function endTheTurn(game, interaction, defeatedEnemies){
         if(game.turnOrder[game.turnIndex].username == undefined){
             makeMove(interaction.channel, game, game.turnIndex)
         } else {
-            game.currentTurn = game.turnOrder[index].digiId
-            await interaction.channel.send(`<@${game.player}>, it is your ${game.turnOrder[index].name}'s turn! Choose an attack with /use-attack!`)
+            game.currentTurn = game.turnOrder[game.turnIndex].digiId
+            await interaction.channel.send(`<@${game.player}>, it is your ${game.turnOrder[game.turnIndex].name}'s turn! Choose an attack with /use-attack!`)
         }
     }
 }
