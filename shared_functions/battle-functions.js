@@ -1,9 +1,12 @@
 const { connectToDatabase } = require('../database')
 const { dungeon } = require("../dungeon-config.json")
+const { natures } = require('../nature-config.json')
 
 module.exports = {
     calculateDamage(user, target, selectedMove){
         let bonus = 0
+        let userNatureBonus = 0
+        let targetNatureBonus = 0
 
         if(((user.attribute == "Data" && target.attribute == "Vaccine") || (user.attribute == "Vaccine" && target.attribute == "Virus") || (user.attribute == "Virus" && target.attribute == "Data")) && selectedMove.times == 1){
             bonus = 5

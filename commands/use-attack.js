@@ -285,8 +285,23 @@ async function endTheTurn(game, interaction, defeatedEnemies){
                     let sql = `UPDATE digimon SET exp = ${newXp} WHERE colId = ${digi.colId}`;
                     con.query(sql, console.log)
                     
-                })
+                })  
             }
+
+            con.query(`SELECT * FROM data WHERE userID = '${interaction.user.id}'`, async (err, rows) => {
+                if (err) {
+                    console.log("ERROR - An error occured getting the data: " + err.message)
+                    await interaction.editReply('An error occured!')
+                    return
+                }
+
+                for(let x = 0; x < enemy.dataDrops.length; x++){
+                    let newData = enemy.dataDrops[x].amount + rows[0][enemy.dataDrops[x].type]
+
+                    let sql = `UPDATE data SET ${enemy.dataDrops[x].type} = ${newData} WHERE userID = ${interaction.user.id}`;
+                    con.query(sql, console.log)
+                }
+            })
 
             await interaction.channel.send(`**${targetName} has been defeated! Your party has gained ${dungeon.training.exp} EXP with ${dealtFinal} gaining an additional ${dungeon.training.killBonus}!**`)
             for(let y= 0; y < game.currentEnemies.length; y++){

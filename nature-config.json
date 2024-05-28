@@ -1,0 +1,229 @@
+{
+    "weights": [75,75,75,75,75,75,75,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,5],
+    "natures": [
+        {
+            "name": "Healthy",
+            "percent": 1.3,
+            "stats": [
+                "hp"
+            ]
+        },
+        {
+            "name": "Wise",
+            "percent": 1.3,
+            "stats": [
+                "mp"
+            ]
+        },
+        {
+            "name": "Tough",
+            "percent": 1.3,
+            "stats": [
+                "atk"
+            ]
+        },
+        {
+            "name": "Bulky",
+            "percent": 1.3,
+            "stats": [
+                "def"
+            ]
+        },
+        {
+            "name": "Saint",
+            "percent": 1.3,
+            "stats": [
+                "spirit"
+            ]
+        },
+        {
+            "name": "Quick",
+            "percent": 1.3,
+            "stats": [
+                "speed"
+            ]
+        },
+        {
+            "name": "Tranquil",
+            "percent": 1.3,
+            "stats": [
+                "recovery"
+            ]
+        },
+        {
+            "name": "Resourceful",
+            "percent": 1.2,
+            "stats": [
+                "hp",
+                "mp"
+            ]
+        },
+        {
+            "name": "Feral",
+            "percent": 1.2,
+            "stats": [
+                "hp",
+                "atk"
+            ]
+        },
+        {
+            "name": "Durable",
+            "percent": 1.2,
+            "stats": [
+                "hp",
+                "def"
+            ]
+        },
+        {
+            "name": "Monk",
+            "percent": 1.2,
+            "stats": [
+                "hp",
+                "spirit"
+            ]
+        },
+        {
+            "name": "Marathoner",
+            "percent": 1.2,
+            "stats": [
+                "hp",
+                "speed"
+            ]
+        },
+        {
+            "name": "Patient",
+            "percent": 1.2,
+            "stats": [
+                "hp",
+                "recovery"
+            ]
+        },
+        {
+            "name": "Wizard",
+            "percent": 1.2,
+            "stats": [
+                "mp",
+                "atk"
+            ]
+        },
+        {
+            "name": "Warder",
+            "percent": 1.2,
+            "stats": [
+                "mp",
+                "def"
+            ]
+        },
+        {
+            "name": "Mystic",
+            "percent": 1.2,
+            "stats": [
+                "mp",
+                "spirit"
+            ]
+        },
+        {
+            "name": "Mage",
+            "percent": 1.2,
+            "stats": [
+                "mp",
+                "speed"
+            ]
+        },
+        {
+            "name": "Healer",
+            "percent": 1.2,
+            "stats": [
+                "mp",
+                "recovery"
+            ]
+        },
+        {
+            "name": "Juggernaut",
+            "percent": 1.2,
+            "stats": [
+                "atk",
+                "def"
+            ]
+        },
+        {
+            "name": "Enchanter",
+            "percent": 1.2,
+            "stats": [
+                "atk",
+                "spirit"
+            ]
+        },
+        {
+            "name": "Sweeper",
+            "percent": 1.2,
+            "stats": [
+                "atk",
+                "speed"
+            ]
+        },
+        {
+            "name": "Onslaught",
+            "percent": 1.2,
+            "stats": [
+                "atk",
+                "recovery"
+            ]
+        },
+        {
+            "name": "Guardian",
+            "percent": 1.2,
+            "stats": [
+                "def",
+                "spirit"
+            ]
+        },
+        {
+            "name": "Resolute",
+            "percent": 1.2,
+            "stats": [
+                "def",
+                "speed"
+            ]
+        },
+        {
+            "name": "Paladin",
+            "percent": 1.2,
+            "stats": [
+                "def",
+                "recovery"
+            ]
+        },
+        {
+            "name": "Rescue",
+            "percent": 1.2,
+            "stats": [
+                "mp",
+                "recovery"
+            ]
+        },
+        {
+            "name": "Self Reliant",
+            "percent": 1.2,
+            "stats": [
+                "mp",
+                "recovery"
+            ]
+        },
+        {
+            "name": "Rapid",
+            "percent": 1.2,
+            "stats": [
+                "speed",
+                "recovery"
+            ]
+        },
+        {
+            "name": "Omni",
+            "percent": 1.15,
+            "stats": [
+                "all"
+            ]
+        }
+    ]
+}

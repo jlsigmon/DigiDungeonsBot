@@ -14,6 +14,12 @@
                     "def": 10,
                     "spirit": 10,
                     "speed": 10,
+                    "dataDrops": [
+                        {
+                            "type": "Dragon",
+                            "amount": 5
+                        }
+                    ],
                     "attacks": [
                         {
                             "name": "Pepper Breath",
@@ -43,6 +49,12 @@
                     "def": 20,
                     "spirit": 10,
                     "speed": 7,
+                    "dataDrops": [
+                        {
+                            "type": "Beast",
+                            "amount": 5
+                        }
+                    ],
                     "attacks": [
                         {
                             "name": "Frozen Shears",
@@ -72,6 +84,12 @@
                     "def": 10,
                     "spirit": 15,
                     "speed": 10,
+                    "dataDrops": [
+                        {
+                            "type": "Holy",
+                            "amount": 5
+                        }
+                    ],
                     "attacks": [
                         {
                             "name": "Bubble Breath",
@@ -101,6 +119,12 @@
                     "def": 10,
                     "spirit": 10,
                     "speed": 5,
+                    "dataDrops": [
+                        {
+                            "type": "Beast",
+                            "Amount": 5
+                        }
+                    ],
                     "attacks": [
                         {
                             "name": "Cannonball",
@@ -131,6 +155,12 @@
                     "def": 30,
                     "spirit": 10,
                     "speed": 12,
+                    "dataDrops": [
+                        {
+                            "type": "Dark",
+                            "Amount": 25
+                        }
+                    ],
                     "attacks": [
                         {
                             "name": "Imp Blaster",
